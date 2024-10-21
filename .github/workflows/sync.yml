@@ -10,16 +10,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout `andpad-camera-ios`
+      - name: Checkout `blueprint-camera-ios`
         uses: actions/checkout@v2
         with:
-          repository: phaleandpad/andpad-camera-ios
+          repository: phaleandpad/blueprint-camera-ios
           ref: develop  # Lấy mã từ nhánh develop
+          persist-credentials: false
 
       - name: Setup Git
         run: |
           git config --global user.name "phaleandpad"
           git config --global user.email "pha.le@andpad.co.jp"
+
+      - name: Add andpad-camera-ios repository
+        run: |
+          git remote add andpad https://$GITHUB_TOKEN@github.com/phaleandpad/andpad-camera-ios.git
+          git fetch andpad
+          git merge andpad/develop --allow-unrelated-histories -m "Merge updates from andpad-camera-ios"
 
       - name: Add remote with token
         run: |
