@@ -3,7 +3,7 @@ name: Sync andpad-camera-ios
 on:
   push:
     branches:
-      - main
+      - develop
     paths:
       - '.github/workflows/sync.yml'
 
@@ -24,6 +24,6 @@ jobs:
 
       - name: Push changes to blueprint-camera-ios
         run: |
-          git push origin main
+          git push origin develop
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
