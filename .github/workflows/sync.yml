@@ -27,6 +27,6 @@ jobs:
 
       - name: Push code to `blueprint-camera-ios`
         run: |
-          git remote add blueprint https://$GITHUB_TOKEN@github.com/88Oct/blueprint-camera-ios.git
+          git remote add blueprint https://$GITHUB_TOKEN@github.com/phaleandpad/blueprint-camera-ios.git
           git push blueprint develop --force  # Push tới nhánh develop
     
