@@ -1,0 +1,20 @@
+Release <%= Time.now %>
+## リリース項目
+
+<% pull_requests.each do |pr| -%>
+<%=  pr.to_checklist_item %>
+<% end -%>
+
+## マージ前作業
+
+- [ ] 上記リリース項目が意図したものであることを確認する。
+- [ ] マイルストーンが全てクローズされていることを確認する。
+- [ ] `develop` ブランチで `$ make` を実行したあと、ビルドして、差分が発生しないことを確認する。
+	- 注）特に、Generatedフォルダの生成ファイルに更新漏れがある場合がある。
+- [ ] 旧黒板機能の [リグレッションテスト](https://docs.google.com/spreadsheets/d/1anLHPVVUx7zvx-LabesoC_Oz2rKU-67nKvOE5TVK4_U/edit#gid=0) を実施する。
+	- 画面回転関連の項目があるので、iPad（実機）で行う。
+
+## マージ後作業
+
+- masterへのマージをトリガーに自動生成される [リリースノート](https://github.com/88labs/andpad-camera-ios/releases) のドラフトを確認し、リリースバージョンと内容に問題がなければ公開する。
+- [施工管理アプリ側](https://github.com/88labs/andpad-ios) でdevelopに対して、タグ指定によるカメラライブラリの取り込みPRを作成する。

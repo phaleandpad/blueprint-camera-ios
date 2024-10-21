@@ -1,0 +1,29 @@
+name: Sync andpad-camera-ios
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/sync.yml'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout blueprint-camera-ios repo
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Add andpad-camera-ios repository
+        run: |
+          git remote add andpad https://github.com/phaleandpad/andpad-camera-ios.git
+          git fetch andpad
+          git merge andpad/main --allow-unrelated-histories -m "Merge updates from andpad-camera-ios"
+
+      - name: Push changes to blueprint-camera-ios
+        run: |
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

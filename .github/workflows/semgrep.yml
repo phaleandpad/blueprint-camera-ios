@@ -1,0 +1,16 @@
+# PR単位で差分があるファイルに対してSemgrep(SASTツール)を実行し、
+# 脆弱性につながる可能性のある記述をPRコメントで指摘するワークフローです
+# 詳細は以下のドキュメントをご参照ください
+# https://andpad-dev.esa.io/posts/8984
+
+name: semgrep
+
+on: pull_request
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  semgrep:
+    uses: 88labs/github-actions-reusable-workflows/.github/workflows/semgrep.yml@main
