@@ -23,12 +23,13 @@ jobs:
 
       - name: Add remote with token
         run: |
-          git remote add andpad https://$GITHUB_TOKEN@github.com/phaleandpad/andpad-camera-ios.git
+          echo "Adding remote repository..."
+          git remote add andpad https://$GH_TOKEN@github.com/phaleandpad/andpad-camera-ios.git
           git fetch andpad
           git merge andpad/develop --allow-unrelated-histories -m "Merge updates from andpad-camera-ios"
 
       - name: Push code to `blueprint-camera-ios`
         run: |
-          git remote add blueprint https://$GITHUB_TOKEN@github.com/phaleandpad/blueprint-camera-ios.git
+          echo "Pushing changes to blueprint-camera-ios..."
+          git remote add blueprint https://$GH_TOKEN@github.com/phaleandpad/blueprint-camera-ios.git
           git push blueprint develop --force  # Push tới nhánh develop
-    
