@@ -13,7 +13,7 @@ jobs:
       - name: Checkout `andpad-camera-ios`
         uses: actions/checkout@v2
         with:
-          repository: 88Oct/andpad-camera-ios
+          repository: phaleandpad/andpad-camera-ios
           ref: develop  # Lấy mã từ nhánh develop
 
       - name: Setup Git
