@@ -1,29 +1,32 @@
-name: Sync andpad-camera-ios
+name: Sync Code to Blueprint Repo
 
 on:
   push:
     branches:
-      - develop
-    paths:
-      - '.github/workflows/sync.yml'
+      - develop  # Thay đổi thành develop
 
 jobs:
-  sync:
+  sync-repo:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout blueprint-camera-ios repo
+      - name: Checkout `andpad-camera-ios`
         uses: actions/checkout@v2
         with:
-          persist-credentials: false
+          repository: 88Oct/andpad-camera-ios
+          ref: develop  # Lấy mã từ nhánh develop
 
-      - name: Add andpad-camera-ios repository
+      - name: Setup Git
         run: |
-          git remote add andpad https://github.com/phaleandpad/andpad-camera-ios.git
-          git fetch andpad
-          git merge andpad/main --allow-unrelated-histories -m "Merge updates from andpad-camera-ios"
+          git config --global user.name "phaleandpad"
+          git config --global user.email "pha.le@andpad.co.jp"
 
-      - name: Push changes to blueprint-camera-ios
+      - name: Add remote with token
         run: |
-          git push origin develop
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git remote add andpad https://$GITHUB_TOKEN@github.com/phaleandpad/andpad-camera-ios.git
+
+      - name: Push code to `blueprint-camera-ios`
+        run: |
+          git remote add blueprint https://$GITHUB_TOKEN@github.com/88Oct/blueprint-camera-ios.git
+          git push blueprint develop --force  # Push tới nhánh develop
+    
