@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_common_grey_search_glossy.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

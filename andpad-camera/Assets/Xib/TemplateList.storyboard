@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tJg-Bl-Dxi">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--黒板を変更-->
+        <scene sceneID="jeP-gH-pzy">
+            <objects>
+                <viewController title="黒板を変更" id="KrM-1s-e10" customClass="TemplateListViewController" customModule="andpad_camera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mkp-z7-Vr3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9Up-Vn-3GS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="bfA-Tm-BUm">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TemplateListCell" id="4Pf-Qg-81n" customClass="TemplateListCell" customModule="andpad_camera" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QpG-lb-cct">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="QpG-lb-cct" firstAttribute="leading" secondItem="4Pf-Qg-81n" secondAttribute="leading" id="AmK-Na-tmU"/>
+                                            <constraint firstAttribute="bottom" secondItem="QpG-lb-cct" secondAttribute="bottom" id="aVy-kC-HFd"/>
+                                            <constraint firstAttribute="trailing" secondItem="QpG-lb-cct" secondAttribute="trailing" id="qVF-FM-y3S"/>
+                                            <constraint firstItem="QpG-lb-cct" firstAttribute="top" secondItem="4Pf-Qg-81n" secondAttribute="top" id="vWb-uW-kZ8"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="templateImage" destination="QpG-lb-cct" id="tp9-wf-WYJ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="KrM-1s-e10" id="vcv-ps-fXQ"/>
+                                    <outlet property="delegate" destination="KrM-1s-e10" id="pR0-CU-Tif"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SV0-Q3-ewJ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Up-Vn-3GS" firstAttribute="top" secondItem="SV0-Q3-ewJ" secondAttribute="top" id="HBA-a1-fAV"/>
+                            <constraint firstItem="9Up-Vn-3GS" firstAttribute="leading" secondItem="SV0-Q3-ewJ" secondAttribute="leading" id="JVQ-1e-rsx"/>
+                            <constraint firstItem="SV0-Q3-ewJ" firstAttribute="trailing" secondItem="9Up-Vn-3GS" secondAttribute="trailing" id="dyY-ZW-QeC"/>
+                            <constraint firstItem="SV0-Q3-ewJ" firstAttribute="bottom" secondItem="9Up-Vn-3GS" secondAttribute="bottom" id="iOa-LR-9tM"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="YHV-nB-O42">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="qvJ-Dp-5kT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RmT-Z6-MT7">
+                                <rect key="frame" x="16" y="11" width="50" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_cancel">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapCancel:" destination="KrM-1s-e10" eventType="touchUpInside" id="LZr-v4-jAy"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="9Up-Vn-3GS" id="Zov-D1-4gx"/>
+                        <segue destination="aSt-mM-rUH" kind="show" identifier="SelectTemplateSegue" id="UcW-v1-c5s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vG-iO-W3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103.2" y="26.53673163418291"/>
+        </scene>
+        <!--黒板を変更-->
+        <scene sceneID="CsW-i2-uNZ">
+            <objects>
+                <viewController title="黒板を変更" id="aSt-mM-rUH" customClass="SelectTemplateViewController" customModule="andpad_camera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="38t-Ad-llq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDb-4k-NUa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dng-ih-KJL">
+                                        <rect key="frame" x="37.5" y="162" width="300" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dng-ih-KJL" secondAttribute="height" multiplier="300:230" id="78O-jC-6E6"/>
+                                            <constraint firstAttribute="width" constant="300" id="Mlh-mp-TCZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-TV-pVs">
+                                        <rect key="frame" x="263" y="490" width="96" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="T8L-GU-2wj"/>
+                                            <constraint firstAttribute="width" constant="96" id="uYx-dO-Qn8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="決定">
+                                            <color key="titleColor" red="1" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapSelectButton:" destination="aSt-mM-rUH" eventType="touchUpInside" id="q2S-4K-uUy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CoI-TV-pVs" secondAttribute="trailing" constant="16" id="KuE-ij-q9U"/>
+                                    <constraint firstAttribute="bottom" secondItem="CoI-TV-pVs" secondAttribute="bottom" constant="16" id="Sq2-IF-tce"/>
+                                    <constraint firstItem="dng-ih-KJL" firstAttribute="centerX" secondItem="WDb-4k-NUa" secondAttribute="centerX" id="eYv-sd-xZt"/>
+                                    <constraint firstItem="dng-ih-KJL" firstAttribute="centerY" secondItem="WDb-4k-NUa" secondAttribute="centerY" id="pY5-y5-csK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wt2-2x-mv8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wt2-2x-mv8" firstAttribute="trailing" secondItem="WDb-4k-NUa" secondAttribute="trailing" id="8w4-e4-5Wr"/>
+                            <constraint firstItem="Wt2-2x-mv8" firstAttribute="bottom" secondItem="WDb-4k-NUa" secondAttribute="bottom" id="9O1-Ez-gl6"/>
+                            <constraint firstItem="WDb-4k-NUa" firstAttribute="top" secondItem="Wt2-2x-mv8" secondAttribute="top" id="S5a-Am-ovz"/>
+                            <constraint firstItem="WDb-4k-NUa" firstAttribute="leading" secondItem="Wt2-2x-mv8" secondAttribute="leading" id="cfV-6x-7bo"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="selectButton" destination="CoI-TV-pVs" id="btE-Fr-4cI"/>
+                        <outlet property="templateImage" destination="dng-ih-KJL" id="Hke-yp-F0F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Gh-Az-FEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015" y="27"/>
+        </scene>
+        <!--黒板を変更-->
+        <scene sceneID="maL-26-aLO">
+            <objects>
+                <navigationController title="黒板を変更" automaticallyAdjustsScrollViewInsets="NO" id="tJg-Bl-Dxi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sf4-fQ-k3P">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KrM-1s-e10" kind="relationship" relationship="rootViewController" id="lwz-wB-OYV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VwX-G2-9yc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_cancel" width="15" height="15"/>
+    </resources>
+</document>

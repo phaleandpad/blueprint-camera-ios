@@ -1,0 +1,6 @@
+
+/* Class = "UILabel"; text = "文字サイズは備考欄に収まるよう自動調整されます"; ObjectID = "aXy-CV-3QJ"; */
+"aXy-CV-3QJ.text" = "Cỡ chữ được tự động điều chỉnh vừa với khoảng trống trên bảng";
+
+/* Class = "UILabel"; text = "備考欄の書式設定"; ObjectID = "vny-xL-81A"; */
+"vny-xL-81A.text" = "Định dạng của trường ghi chú";

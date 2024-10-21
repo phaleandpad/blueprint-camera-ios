@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditMiniatureMapCell" rowHeight="191" id="MLn-9O-bFp" customClass="EditMiniatureMapCell" customModule="andpad_camera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MLn-9O-bFp" id="Kle-7g-SGL">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="C3k-Fp-rTw">
+                        <rect key="frame" x="16" y="2" width="382" height="12"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="豆図" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hF-Z4-SnU" userLabel="豆図">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アプリでは編集できません" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHC-AU-auj">
+                                <rect key="frame" x="33" y="0.0" width="349" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="boy-3h-DoZ"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKw-E4-UwE">
+                        <rect key="frame" x="16" y="26" width="382" height="152"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOH-RI-f59">
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="152"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EZA-bz-Kw7">
+                                <rect key="frame" x="131" y="16" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="086-zU-ecl"/>
+                                    <constraint firstAttribute="width" constant="120" id="CX2-OV-MJA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jOH-RI-f59" firstAttribute="top" secondItem="CKw-E4-UwE" secondAttribute="top" id="9se-jR-L88"/>
+                            <constraint firstAttribute="bottom" secondItem="EZA-bz-Kw7" secondAttribute="bottom" constant="16" id="DeV-Lz-H17"/>
+                            <constraint firstItem="EZA-bz-Kw7" firstAttribute="centerY" secondItem="CKw-E4-UwE" secondAttribute="centerY" id="UaX-16-Cy0"/>
+                            <constraint firstAttribute="bottom" secondItem="jOH-RI-f59" secondAttribute="bottom" id="an8-9j-jlr"/>
+                            <constraint firstItem="EZA-bz-Kw7" firstAttribute="top" secondItem="CKw-E4-UwE" secondAttribute="top" constant="16" id="cTz-p8-Me2"/>
+                            <constraint firstAttribute="trailing" secondItem="jOH-RI-f59" secondAttribute="trailing" id="eB3-pg-9e9"/>
+                            <constraint firstItem="EZA-bz-Kw7" firstAttribute="centerX" secondItem="CKw-E4-UwE" secondAttribute="centerX" id="q5a-W1-pmG"/>
+                            <constraint firstItem="jOH-RI-f59" firstAttribute="leading" secondItem="CKw-E4-UwE" secondAttribute="leading" id="r0N-sb-uNg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CKw-E4-UwE" firstAttribute="top" secondItem="C3k-Fp-rTw" secondAttribute="bottom" constant="12" id="AC8-ea-Iqp"/>
+                    <constraint firstItem="C3k-Fp-rTw" firstAttribute="top" secondItem="Kle-7g-SGL" secondAttribute="top" constant="2" id="Inm-JC-6wP"/>
+                    <constraint firstItem="C3k-Fp-rTw" firstAttribute="leading" secondItem="Kle-7g-SGL" secondAttribute="leading" constant="16" id="Jfb-iX-BXa"/>
+                    <constraint firstAttribute="trailing" secondItem="C3k-Fp-rTw" secondAttribute="trailing" constant="16" id="ViQ-Nc-cgm"/>
+                    <constraint firstAttribute="trailing" secondItem="CKw-E4-UwE" secondAttribute="trailing" constant="16" id="g89-nO-mJV"/>
+                    <constraint firstItem="CKw-E4-UwE" firstAttribute="leading" secondItem="Kle-7g-SGL" secondAttribute="leading" constant="16" id="pdq-qn-yOo"/>
+                    <constraint firstAttribute="bottom" secondItem="CKw-E4-UwE" secondAttribute="bottom" constant="26" id="y0O-LY-vJe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerButton" destination="jOH-RI-f59" id="Uwh-BM-xJs"/>
+                <outlet property="containerView" destination="CKw-E4-UwE" id="xaw-Mf-Uob"/>
+                <outlet property="containerViewBottomMarginConstraint" destination="y0O-LY-vJe" id="s2B-mr-3ck"/>
+                <outlet property="descriptionLabel" destination="zHC-AU-auj" id="bzX-sI-YJz"/>
+                <outlet property="miniatureMapImageView" destination="EZA-bz-Kw7" id="CdQ-5l-rgz"/>
+                <outlet property="titleLabel" destination="1hF-Z4-SnU" id="2zx-ca-67c"/>
+            </connections>
+            <point key="canvasLocation" x="-149.27536231884059" y="4.3526785714285712"/>
+        </tableViewCell>
+    </objects>
+</document>

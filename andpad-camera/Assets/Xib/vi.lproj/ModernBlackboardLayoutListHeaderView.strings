@@ -1,0 +1,6 @@
+
+/* Class = "UILabel"; text = "作成する黒板のレイアウトを選択してください"; ObjectID = "5Fo-pX-wSQ"; */
+"5Fo-pX-wSQ.text" = "Vui lòng chọn một layout để tạo bảng mới";
+
+/* Class = "UILabel"; text = "現在アプリでは豆図対応レイアウトを選択できません"; ObjectID = "Ai8-4g-z4r"; */
+"Ai8-4g-z4r.text" = "Ứng dụng hiện tại chưa hỗ trợ layout có đính kèm hình ảnh";

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fA9-vM-HZm" customClass="ModernBlackboardListEmptyWithFilteringView" customModule="andpad_camera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1o-NZ-5db">
+                    <rect key="frame" x="16" y="16" width="382" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="WNy-NK-4vK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehw-yg-hjI">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ehw-yg-hjI" firstAttribute="top" secondItem="fA9-vM-HZm" secondAttribute="top" id="1x9-SV-THS"/>
+                <constraint firstItem="w1o-NZ-5db" firstAttribute="leading" secondItem="fA9-vM-HZm" secondAttribute="leading" constant="16" id="IdV-Wz-mfG"/>
+                <constraint firstItem="ehw-yg-hjI" firstAttribute="leading" secondItem="fA9-vM-HZm" secondAttribute="leading" id="UHD-zK-f6B"/>
+                <constraint firstItem="w1o-NZ-5db" firstAttribute="top" secondItem="fA9-vM-HZm" secondAttribute="top" constant="16" id="kHT-sw-TaJ"/>
+                <constraint firstAttribute="bottom" secondItem="ehw-yg-hjI" secondAttribute="bottom" id="n22-GN-kqU"/>
+                <constraint firstAttribute="trailing" secondItem="ehw-yg-hjI" secondAttribute="trailing" id="nMF-EG-LOy"/>
+                <constraint firstAttribute="trailing" secondItem="w1o-NZ-5db" secondAttribute="trailing" constant="16" id="qVw-j1-nga"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="w1o-NZ-5db" id="Vnz-Kx-xBK"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="-173.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

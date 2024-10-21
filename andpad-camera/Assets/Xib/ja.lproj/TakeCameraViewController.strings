@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "次へ"; ObjectID = "7hD-Ic-fAK"; */
+"7hD-Ic-fAK.normalTitle" = "次へ";
+
+/* Class = "UILabel"; text = "1.0x"; ObjectID = "I3y-A0-r4d"; */
+"I3y-A0-r4d.text" = "1.0x";
+
+/* Class = "UILabel"; text = "<PhotoCountLabel>"; ObjectID = "Vxn-bB-qrf"; */
+"Vxn-bB-qrf.text" = "<PhotoCountLabel>";
+
+/* Class = "UIButton"; normalTitle = "キャンセル"; ObjectID = "jQH-Ay-ouB"; */
+"jQH-Ay-ouB.normalTitle" = "キャンセル";

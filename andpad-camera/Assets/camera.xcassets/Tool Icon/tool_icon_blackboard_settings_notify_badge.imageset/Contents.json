@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tool_icon_blackboard_settings_notify_badge.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

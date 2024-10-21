@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "更新"; ObjectID = "Uil-LR-rVN"; */
+"Uil-LR-rVN.normalTitle" = "Refresh";
+
+/* Class = "UILabel"; text = "絞り込み条件を反映するには画面の更新が必要です"; ObjectID = "YNk-py-ylL"; */
+"YNk-py-ylL.text" = "To reflect the new filter items, you need to refresh the page.";
+
+/* Class = "UIButton"; normalTitle = "キャンセル"; ObjectID = "r53-q6-yTr"; */
+"r53-q6-yTr.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "撮影時の絞り込み条件が変更されました"; ObjectID = "yvQ-kP-aVy"; */
+"yvQ-kP-aVy.text" = "The filter conditions for photo shooting have been updated.";

@@ -1,0 +1,239 @@
+PODS:
+  - Alamofire (5.9.1)
+  - andpad-camera (1.0.0):
+    - Alamofire (~> 5.0)
+    - AndpadCore
+    - AndpadUIComponent
+    - EasyPeasy
+    - Instantiate
+    - InstantiateStandard
+    - Nuke
+    - rakugaki
+    - RxCocoa
+    - RxDataSources
+    - RxSwift (~> 6.6.0)
+    - SnapKit
+    - TamperProof
+    - UIImage-ResizeMagick
+  - AndpadCore (0.0.1):
+    - DKImagePickerController
+    - RxCocoa
+    - RxRelay
+    - RxSwift (~> 6.6.0)
+    - SwiftLint
+  - AndpadUIComponent (0.0.1):
+    - AndpadCore
+    - MBProgressHUD
+    - SDWebImage
+    - SwiftLint
+  - CropViewController (2.7.2)
+  - CwlCatchException (2.2.0):
+    - CwlCatchExceptionSupport (~> 2.2.0)
+  - CwlCatchExceptionSupport (2.2.0)
+  - CwlMachBadInstructionHandler (2.2.0)
+  - CwlPosixPreconditionTesting (2.2.0)
+  - CwlPreconditionTesting (2.2.1):
+    - CwlCatchException (~> 2.2.0)
+    - CwlMachBadInstructionHandler (~> 2.2.0)
+    - CwlPosixPreconditionTesting (~> 2.2.0)
+  - Differentiator (5.0.0)
+  - DKCamera (1.6.7)
+  - DKImagePickerController (4.3.4):
+    - DKImagePickerController/Camera (= 4.3.4)
+    - DKImagePickerController/Core (= 4.3.4)
+    - DKImagePickerController/ImageDataManager (= 4.3.4)
+    - DKImagePickerController/InlineCamera (= 4.3.4)
+    - DKImagePickerController/PhotoEditor (= 4.3.4)
+    - DKImagePickerController/PhotoGallery (= 4.3.4)
+    - DKImagePickerController/Resource (= 4.3.4)
+  - DKImagePickerController/Camera (4.3.4):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/Core (4.3.4):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.3.4)
+  - DKImagePickerController/InlineCamera (4.3.4):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/PhotoEditor (4.3.4):
+    - CropViewController (~> 2.5)
+    - DKImagePickerController/Core
+  - DKImagePickerController/PhotoGallery (4.3.4):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.3.4)
+  - DKPhotoGallery (0.0.17):
+    - DKPhotoGallery/Core (= 0.0.17)
+    - DKPhotoGallery/Model (= 0.0.17)
+    - DKPhotoGallery/Preview (= 0.0.17)
+    - DKPhotoGallery/Resource (= 0.0.17)
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Core (0.0.17):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Model (0.0.17):
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Preview (0.0.17):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Resource (0.0.17):
+    - SDWebImage
+    - SwiftyGif
+  - EasyPeasy (1.10.0)
+  - Instantiate (4.0.0)
+  - InstantiateStandard (4.0.0):
+    - Instantiate (~> 4.0)
+  - MBProgressHUD (1.2.0)
+  - Nimble (13.2.1):
+    - CwlPreconditionTesting (~> 2.2.0)
+  - Nuke (10.7.1)
+  - Quick (7.4.1)
+  - rakugaki (0.2.4):
+    - RxCocoa
+  - RxBlocking (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - RxTest (6.6.0):
+    - RxSwift (= 6.6.0)
+  - SDWebImage (5.19.1):
+    - SDWebImage/Core (= 5.19.1)
+  - SDWebImage/Core (5.19.1)
+  - SnapKit (5.7.1)
+  - SwiftGen (6.6.3)
+  - SwiftLint (0.54.0)
+  - SwiftyGif (5.4.5)
+  - TamperProof (2.0.0)
+  - UIImage-ResizeMagick (0.0.1)
+
+DEPENDENCIES:
+  - andpad-camera (from `../`)
+  - "AndpadCore (from `git@github.com:88labs/andpad-ios-sdk.git`, tag `1.9.0`)"
+  - "AndpadUIComponent (from `git@github.com:88labs/andpad-ios-sdk.git`, tag `1.9.0`)"
+  - Nimble (= 13.2.1)
+  - Quick (= 7.4.1)
+  - "rakugaki (from `git@github.com:88labs/rakugaki.git`, tag `v0.14.0`)"
+  - RxBlocking (~> 6.6.0)
+  - RxTest (~> 6.6.0)
+  - SwiftGen (= 6.6.3)
+  - SwiftLint (= 0.54.0)
+  - "TamperProof (from `git@github.com:88labs/tamper-proof-ios.git`, commit `9e51ff8503a6107e2d0a10252c765ac2c1b34e91`)"
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CropViewController
+    - CwlCatchException
+    - CwlCatchExceptionSupport
+    - CwlMachBadInstructionHandler
+    - CwlPosixPreconditionTesting
+    - CwlPreconditionTesting
+    - Differentiator
+    - DKCamera
+    - DKImagePickerController
+    - DKPhotoGallery
+    - EasyPeasy
+    - Instantiate
+    - InstantiateStandard
+    - MBProgressHUD
+    - Nimble
+    - Nuke
+    - Quick
+    - RxBlocking
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - SDWebImage
+    - SnapKit
+    - SwiftGen
+    - SwiftLint
+    - SwiftyGif
+    - UIImage-ResizeMagick
+
+EXTERNAL SOURCES:
+  andpad-camera:
+    :path: "../"
+  AndpadCore:
+    :git: "git@github.com:88labs/andpad-ios-sdk.git"
+    :tag: 1.9.0
+  AndpadUIComponent:
+    :git: "git@github.com:88labs/andpad-ios-sdk.git"
+    :tag: 1.9.0
+  rakugaki:
+    :git: "git@github.com:88labs/rakugaki.git"
+    :tag: v0.14.0
+  TamperProof:
+    :commit: 9e51ff8503a6107e2d0a10252c765ac2c1b34e91
+    :git: "git@github.com:88labs/tamper-proof-ios.git"
+
+CHECKOUT OPTIONS:
+  AndpadCore:
+    :git: "git@github.com:88labs/andpad-ios-sdk.git"
+    :tag: 1.9.0
+  AndpadUIComponent:
+    :git: "git@github.com:88labs/andpad-ios-sdk.git"
+    :tag: 1.9.0
+  rakugaki:
+    :git: "git@github.com:88labs/rakugaki.git"
+    :tag: v0.14.0
+  TamperProof:
+    :commit: 9e51ff8503a6107e2d0a10252c765ac2c1b34e91
+    :git: "git@github.com:88labs/tamper-proof-ios.git"
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  andpad-camera: de6d8e1e2453c827315c10d0cce0c2d15f2f0088
+  AndpadCore: a76f3ba6636923bad83ada5004fe8cdd0933b10c
+  AndpadUIComponent: f3eb8f4b0edc0c4dcfbcb3bf9528ca2a06b900e2
+  CropViewController: 919f4e49dc298a610265bb1eeaa7e195298e3c5b
+  CwlCatchException: 51bf8319009a31104ea6f0568730d1ecc25b6454
+  CwlCatchExceptionSupport: 1345d6adb01a505933f2bc972dab60dcb9ce3e50
+  CwlMachBadInstructionHandler: ea1030428925d9bf340882522af30712fb4bf356
+  CwlPosixPreconditionTesting: a125dee731883f2582715f548c6b6c92c7fde145
+  CwlPreconditionTesting: ccfd08aca58d14e04062b2a3dd2fd52e09857453
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  DKCamera: a902b66921fca14b7a75266feb8c7568aa7caa71
+  DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
+  DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
+  EasyPeasy: b9b1bae024d21a7dfa9bad26d6826d88348cc6f1
+  Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
+  InstantiateStandard: 18ab1417ba787113350c71a5b2251f0b4448be67
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Nimble: 9e81a67096dab1d1f5160d7a3f8fa7a1eeec38fd
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
+  Quick: 6afbb0e4554ca0032a90c144f4ab71cd433e7dac
+  rakugaki: 5cb928fdd4d755ac4e71140f99aaaa9a4a8936c7
+  RxBlocking: fbd1f8501443024f686e556f36dac79b0d5f4d7c
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  RxTest: a23f26bb53a5e146a0a69db4f0fa0b69001ce7f4
+  SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SwiftGen: 4993cbf71cbc4886f775e26f8d5c3a1188ec9f99
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+  SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
+  TamperProof: b4aadf2c93626eaef87679509ab64c577de55606
+  UIImage-ResizeMagick: f08c2d14d1e8a5f0b402185408785540562f2fe7
+
+PODFILE CHECKSUM: 758844a0769c9b50a21599104016943add8e6f7f
+
+COCOAPODS: 1.15.2

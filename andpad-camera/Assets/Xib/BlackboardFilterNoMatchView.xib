@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BlackboardFilterNoMatchView" customModule="andpad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTk-Q4-S1k">
+                    <rect key="frame" x="16" y="24" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsc-4C-fcl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <connections>
+                        <action selector="tapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="cEl-Z4-UQd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xsc-4C-fcl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0ol-0a-gRI"/>
+                <constraint firstAttribute="trailing" secondItem="VTk-Q4-S1k" secondAttribute="trailing" constant="16" id="9Bj-Ph-B9C"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xsc-4C-fcl" secondAttribute="bottom" id="DCx-pm-zG3"/>
+                <constraint firstItem="VTk-Q4-S1k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="efU-TR-ILr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VTk-Q4-S1k" secondAttribute="bottom" constant="24" id="oxZ-dP-XDz"/>
+                <constraint firstItem="VTk-Q4-S1k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="rR0-M5-hpw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xsc-4C-fcl" secondAttribute="trailing" id="wZx-Rg-U5E"/>
+                <constraint firstItem="xsc-4C-fcl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yRv-qF-nDM"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="VTk-Q4-S1k" id="GUL-HE-25p"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="-173.10267857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

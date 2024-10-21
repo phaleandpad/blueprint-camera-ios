@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ModernBlackboardAlphaCell" id="MeF-bN-qRw" customClass="ModernBlackboardAlphaCell" customModule="andpad_camera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MeF-bN-qRw" id="kTo-iM-WWH">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOO-DU-RiC">
+                        <rect key="frame" x="16" y="0.0" width="382" height="89"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nOO-DU-RiC" firstAttribute="leading" secondItem="kTo-iM-WWH" secondAttribute="leading" constant="16" id="KqF-xt-6ll"/>
+                    <constraint firstItem="nOO-DU-RiC" firstAttribute="top" secondItem="kTo-iM-WWH" secondAttribute="top" id="aaO-q8-dj1"/>
+                    <constraint firstAttribute="trailing" secondItem="nOO-DU-RiC" secondAttribute="trailing" constant="16" id="lKz-oR-oHb"/>
+                    <constraint firstAttribute="bottom" secondItem="nOO-DU-RiC" secondAttribute="bottom" id="yuW-Ip-hjV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="nOO-DU-RiC" id="U0d-V4-boi"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

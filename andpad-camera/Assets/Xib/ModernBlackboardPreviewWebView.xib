@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fsd-2R-Rc2" userLabel="Modern Blackboard Preview Web View" customClass="ModernBlackboardPreviewWebView" customModule="andpad_camera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="249"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4O8-rI-7wG" userLabel="Expand Mode View">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="249"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4Y-R3-ziv" userLabel="Select Blackboard Button">
+                            <rect key="frame" x="54" y="16" width="192" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="1gT-8U-gBn"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="xFF-1M-rJa"/>
+                            </constraints>
+                            <color key="tintColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="icon_switch_view" title="黒板一覧から選択" imagePadding="9.5">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                <color key="baseForegroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GU3-mv-QGw" userLabel="Preview Web View">
+                            <rect key="frame" x="30" y="64" width="240" height="184"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="GU3-mv-QGw" secondAttribute="height" multiplier="30:23" id="GYN-wU-mlI"/>
+                                <constraint firstAttribute="width" constant="240" id="i8Y-YE-6zZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="L4Y-R3-ziv" firstAttribute="centerX" secondItem="4O8-rI-7wG" secondAttribute="centerX" id="16I-ty-fVk"/>
+                        <constraint firstItem="GU3-mv-QGw" firstAttribute="centerX" secondItem="4O8-rI-7wG" secondAttribute="centerX" id="KIZ-hl-zM7"/>
+                        <constraint firstItem="GU3-mv-QGw" firstAttribute="top" secondItem="4O8-rI-7wG" secondAttribute="top" constant="64" id="Oy3-Ky-eIi"/>
+                        <constraint firstAttribute="bottom" secondItem="GU3-mv-QGw" secondAttribute="bottom" priority="999" constant="32" id="lRJ-wT-wDg"/>
+                        <constraint firstItem="L4Y-R3-ziv" firstAttribute="top" secondItem="4O8-rI-7wG" secondAttribute="top" constant="16" id="yqU-IY-Kg5"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVG-ek-Zr1" userLabel="Shrink Mode View">
+                    <rect key="frame" x="0.0" y="217" width="300" height="32"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_thin_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Sbi-Gh-9RC">
+                            <rect key="frame" x="134" y="0.0" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="Gmc-va-vl6"/>
+                                <constraint firstAttribute="height" constant="32" id="pZZ-zA-BjH"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j2-0t-ajc" userLabel="Arrow Button">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="32"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Sbi-Gh-9RC" firstAttribute="centerY" secondItem="BVG-ek-Zr1" secondAttribute="centerY" id="0A0-FS-YjE"/>
+                        <constraint firstItem="7j2-0t-ajc" firstAttribute="leading" secondItem="BVG-ek-Zr1" secondAttribute="leading" id="G1R-3S-Efw"/>
+                        <constraint firstAttribute="height" constant="32" id="bSA-L5-6ay"/>
+                        <constraint firstAttribute="bottom" secondItem="7j2-0t-ajc" secondAttribute="bottom" id="f1D-bs-tdZ"/>
+                        <constraint firstAttribute="trailing" secondItem="7j2-0t-ajc" secondAttribute="trailing" id="hle-8s-Qbc"/>
+                        <constraint firstItem="Sbi-Gh-9RC" firstAttribute="centerX" secondItem="BVG-ek-Zr1" secondAttribute="centerX" id="nE8-cm-qbL"/>
+                        <constraint firstItem="7j2-0t-ajc" firstAttribute="top" secondItem="BVG-ek-Zr1" secondAttribute="top" id="xmr-dm-Cnl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BVG-ek-Zr1" firstAttribute="leading" secondItem="fsd-2R-Rc2" secondAttribute="leading" id="EFb-v9-0lR"/>
+                <constraint firstItem="4O8-rI-7wG" firstAttribute="top" secondItem="fsd-2R-Rc2" secondAttribute="top" id="TZ6-km-nbP"/>
+                <constraint firstItem="BVG-ek-Zr1" firstAttribute="trailing" secondItem="fsd-2R-Rc2" secondAttribute="trailing" id="Ul6-Wy-697"/>
+                <constraint firstAttribute="trailing" secondItem="4O8-rI-7wG" secondAttribute="trailing" id="lpo-0i-P9l"/>
+                <constraint firstItem="BVG-ek-Zr1" firstAttribute="bottom" secondItem="fsd-2R-Rc2" secondAttribute="bottom" id="r5s-LA-qRj"/>
+                <constraint firstItem="4O8-rI-7wG" firstAttribute="leading" secondItem="fsd-2R-Rc2" secondAttribute="leading" id="xHG-Dv-JAC"/>
+                <constraint firstAttribute="bottom" secondItem="4O8-rI-7wG" secondAttribute="bottom" id="yqS-IP-G6L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowButton" destination="7j2-0t-ajc" id="TBl-n9-pBO"/>
+                <outlet property="expandModeView" destination="4O8-rI-7wG" id="9uR-RZ-2QF"/>
+                <outlet property="previewImageViewTopMargin" destination="Oy3-Ky-eIi" id="tx3-vt-YBr"/>
+                <outlet property="previewWebView" destination="GU3-mv-QGw" id="9GL-qk-Ct0"/>
+                <outlet property="selectBlackboardButton" destination="L4Y-R3-ziv" id="0kz-y4-onf"/>
+                <outlet property="shrinkModeView" destination="BVG-ek-Zr1" id="jvk-cp-Hl8"/>
+            </connections>
+            <point key="canvasLocation" x="8.6956521739130448" y="-118.52678571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_thin_bottom" width="17" height="11"/>
+        <image name="icon_switch_view" width="17" height="12"/>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+format_version: "8"
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+project_type: ios
+trigger_map:
+- push_branch: '*'
+  workflow: test
+- pull_request_source_branch: '*'
+  workflow: test
+workflows:
+  deploy:
+    steps:
+    - activate-ssh-key@4:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@6: {}
+    - cache-pull@2: {}
+    - script@1:
+        title: Do anything with Script step
+    - certificate-and-profile-installer@1: {}
+    - cocoapods-install@2: {}
+    - xcode-test@2:
+        inputs:
+        - project_path: $BITRISE_PROJECT_PATH
+        - scheme: $BITRISE_SCHEME
+    - xcode-archive@3:
+        inputs:
+        - project_path: $BITRISE_PROJECT_PATH
+        - scheme: $BITRISE_SCHEME
+        - export_method: $BITRISE_EXPORT_METHOD
+    - deploy-to-bitrise-io@1: {}
+    - cache-push@2: {}
+  test:
+    steps:
+    - activate-ssh-key@4:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@6: {}
+    - cache-pull@2: {}
+    - script@1:
+        title: Do anything with Script step
+    - certificate-and-profile-installer@1: {}
+    - cocoapods-install@2: {}
+    - xcode-test@2:
+        inputs:
+        - project_path: $BITRISE_PROJECT_PATH
+        - scheme: $BITRISE_SCHEME
+    - deploy-to-bitrise-io@1: {}
+    - cache-push@2: {}
+  Command_UpdateProfile:
+    steps:
+    - activate-ssh-key@4: {}
+    - git-clone@8: {}
+    - script@1:
+        title: Download api_key.json
+        inputs:
+        - content: |
+            #!/usr/bin/env bash
+            # fail if any commands fails
+            set -e
+            # make pipelines' return status equal the last command to exit with a non-zero status, or zero if all commands exit successfully
+            set -o pipefail
+            # debug log
+            set -x
+
+            # write your script here
+
+            curl -o api_key.json $BITRISEIO_FASTLANE_API_KEY_JSON_URL
+    - script@1:
+        title: Download and Install WWDR certificate
+        inputs:
+        - content: |
+            #!/usr/bin/env bash
+            # fail if any commands fails
+            set -e
+            # make pipelines' return status equal the last command to exit with a non-zero status, or zero if all commands exit successfully
+            set -o pipefail
+            # debug log
+            set -x
+
+            # This is workaround for fastlane match failure because of "Could not install WWDR certificate" ref: https://github.com/fastlane/fastlane/issues/20960#issuecomment-1482985500
+            tmpfile=$(mktemp /tmp/wwdr-cert.cer)
+            curl -f -o $tmpfile https://www.apple.com/certificateauthority/AppleWWDRCAG3.cer && security import $tmpfile /Users/vagrant/Library/Keychains/login.keychain-db
+    - fastlane@3:
+        inputs:
+        - lane: match development --force_for_new_device --api_key_path api_key.json
+        title: fastlane match development
+app:
+  envs:
+  - opts:
+      is_expand: false
+    BITRISE_PROJECT_PATH: Example/andpad-camera.xcworkspace
+  - opts:
+      is_expand: false
+    BITRISE_SCHEME: andpad-camera-Example
+  - opts:
+      is_expand: false
+    BITRISE_EXPORT_METHOD: development
+meta:
+  bitrise.io:
+    machine_type: elite
+    stack: osx-xcode-15.4.x
+    machine_type_id: g2-m1.8core

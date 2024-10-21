@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tool_icon_location_off.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

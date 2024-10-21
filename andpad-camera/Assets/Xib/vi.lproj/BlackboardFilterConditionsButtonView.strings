@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; configuration.title = "クリア"; ObjectID = "7WZ-vc-wU3"; */
+"7WZ-vc-wU3.configuration.title" = "Bỏ lọc";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7WZ-vc-wU3"; */
+"7WZ-vc-wU3.normalTitle" = "Bỏ lọc";
+
+/* Class = "UILabel"; text = "件"; ObjectID = "Elb-MG-msu"; */
+"Elb-MG-msu.text" = "";
+
+/* Class = "UILabel"; text = " - "; ObjectID = "KNa-6j-sxk"; */
+"KNa-6j-sxk.text" = " - ";
+
+/* Class = "UILabel"; text = "絞り込み"; ObjectID = "aeE-l5-7m9"; */
+"aeE-l5-7m9.text" = "đã lọc";
+
+/* Class = "UILabel"; text = "選択した条件を設定"; ObjectID = "bas-Sz-xxW"; */
+"bas-Sz-xxW.text" = "Đặt nội dung lọc";
+
+/* Class = "UILabel"; text = "該当件数"; ObjectID = "i0H-ZU-G7S"; */
+"i0H-ZU-G7S.text" = "Tổng";

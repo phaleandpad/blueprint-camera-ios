@@ -1,0 +1,1130 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		343B2CE40F24C83FD63BF04B /* Pods_andpad_camera_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737AAEA4D3863380E41990A9 /* Pods_andpad_camera_Example.framework */; };
+		390B140625492C00008CE94E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 390B140525492C00008CE94E /* .swiftlint.yml */; };
+		392224F427CCDC0A00BB5F9B /* BlackboardFilterMultiSelectViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392224F327CCDC0A00BB5F9B /* BlackboardFilterMultiSelectViewControllerTests.swift */; };
+		3952F01E272A32FD008178AE /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952F01D272A32FD008178AE /* ViewAccessibilityIdentifier.swift */; };
+		39710E4A27963AB000DB6312 /* DummyBlackboardHistoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39710E4927963AB000DB6312 /* DummyBlackboardHistoryHandler.swift */; };
+		3972F1C82848CA83004D46B2 /* PostOrPutBlackboardLoggingHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3972F1C72848CA83004D46B2 /* PostOrPutBlackboardLoggingHandlerTests.swift */; };
+		39992AF8279A70270001D07E /* BlackboardFilterConditionsHistoryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AE5279A70230001D07E /* BlackboardFilterConditionsHistoryViewControllerTests.swift */; };
+		39992AF9279A70270001D07E /* ModernBlackboardContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AE7279A70240001D07E /* ModernBlackboardContentViewTests.swift */; };
+		39992AFB279A70270001D07E /* TakeCameraViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AE9279A70240001D07E /* TakeCameraViewControllerTests.swift */; };
+		39992AFC279A70270001D07E /* BlackboardFilterConditionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AEA279A70240001D07E /* BlackboardFilterConditionsViewModelTests.swift */; };
+		39992AFD279A70270001D07E /* ResponseDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AEC279A70240001D07E /* ResponseDataTests.swift */; };
+		39992AFE279A70270001D07E /* ModernBlackboardMaterialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AED279A70240001D07E /* ModernBlackboardMaterialTests.swift */; };
+		39992AFF279A70270001D07E /* InitialLocationDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AEE279A70250001D07E /* InitialLocationDataTests.swift */; };
+		39992B01279A70270001D07E /* TakeCameraViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AF0279A70260001D07E /* TakeCameraViewControllerSpec.swift */; };
+		39992B02279A70270001D07E /* UIView+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AF1279A70260001D07E /* UIView+ExtensionTests.swift */; };
+		39992B03279A70270001D07E /* UIView+FindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AF3279A70270001D07E /* UIView+FindTests.swift */; };
+		39992B04279A70270001D07E /* UIView+Find.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AF4279A70270001D07E /* UIView+Find.swift */; };
+		39992B05279A70270001D07E /* BlackboardFilterMultiSelectViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AF5279A70270001D07E /* BlackboardFilterMultiSelectViewModelTests.swift */; };
+		39992B06279A70270001D07E /* BlackboardListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39992AF6279A70270001D07E /* BlackboardListViewControllerTests.swift */; };
+		39E90985272B8A8000779993 /* XCUIElementQuery+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E90984272B8A8000779993 /* XCUIElementQuery+Identifier.swift */; };
+		39E90989272B9AF000779993 /* TakeCameraWithLegacyBlackboardUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E90988272B9AF000779993 /* TakeCameraWithLegacyBlackboardUITest.swift */; };
+		39E9098C2733544E00779993 /* ActionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9098B2733544E00779993 /* ActionHelper.swift */; };
+		39EF8C7F287FD3DB00BCF0B3 /* ModernBlackboardAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF8C7E287FD3DB00BCF0B3 /* ModernBlackboardAppearanceTests.swift */; };
+		39F8728829148F3B00291DFF /* ModernBlackboardMaterialStubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8728729148F3B00291DFF /* ModernBlackboardMaterialStubTests.swift */; };
+		4607DB0A2B198E6C003B4627 /* ModernBlackboardConfigurationInitialLocationDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607DB092B198E6C003B4627 /* ModernBlackboardConfigurationInitialLocationDataTests.swift */; };
+		4618F3ED2C843AFF00799973 /* RemoteConfigHandlerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4618F3EC2C843AFF00799973 /* RemoteConfigHandlerStub.swift */; };
+		469509AE2C7EE42200883282 /* RemoteConfigHandlerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469509AD2C7EE42200883282 /* RemoteConfigHandlerStub.swift */; };
+		46B8B3A62AA59B300005BC3A /* ModernBlackboardLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B8B3A52AA59B300005BC3A /* ModernBlackboardLayoutTests.swift */; };
+		46C635332C0853AF002DEE5B /* ModernBlackboardMaterial+forTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C635322C0853AF002DEE5B /* ModernBlackboardMaterial+forTesting.swift */; };
+		46CD75F92BECE94300A3F3EC /* ModernBlackboardCameraStorageStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD75F82BECE94300A3F3EC /* ModernBlackboardCameraStorageStub.swift */; };
+		46E7B4B82ACB05B900CE1555 /* AndpadCameraLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E7B4B72ACB05B900CE1555 /* AndpadCameraLoggerTests.swift */; };
+		46ED3A422C27E096000E07F6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED3A412C27E096000E07F6 /* Logger.swift */; };
+		46ED3A442C2834B0000E07F6 /* PhotoPreviewWithLegacyBlackboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED3A432C2834B0000E07F6 /* PhotoPreviewWithLegacyBlackboardUITests.swift */; };
+		46ED3A462C286C9F000E07F6 /* EditLegacyBlackboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED3A452C286C9F000E07F6 /* EditLegacyBlackboardUITests.swift */; };
+		46ED3A482C2901E6000E07F6 /* LegacyBlackboardTemplateListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED3A472C2901E6000E07F6 /* LegacyBlackboardTemplateListUITests.swift */; };
+		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		77843FE55F2B1F5EB70CFE49 /* Pods_andpad_camera_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0697DF8CF8C5FA3012A4CC8A /* Pods_andpad_camera_Tests.framework */; };
+		A7E811332BEB8A0C00ED1AED /* ModernBlackboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E811322BEB8A0C00ED1AED /* ModernBlackboardTests.swift */; };
+		BC328F822C2BA72C0015AFCF /* JavaScriptBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC328F812C2BA72C0015AFCF /* JavaScriptBridgeTests.swift */; };
+		BC328F852C2BBF880015AFCF /* JavaScriptBridgeTests_JSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC328F842C2BBF880015AFCF /* JavaScriptBridgeTests_JSON.txt */; };
+		BC328F872C2BBFEC0015AFCF /* JavaScriptBridgeTests_Expected.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC328F862C2BBFEC0015AFCF /* JavaScriptBridgeTests_Expected.txt */; };
+		BCC6E5B92C0EF03300B63907 /* BlackboardHTMLRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6E5B82C0EF03300B63907 /* BlackboardHTMLRendererTests.swift */; };
+		F9031E882A60440900A12353 /* ModernBlackboardCommonSettingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9031E872A60440900A12353 /* ModernBlackboardCommonSettingSpec.swift */; };
+		F97D74CF2A7A922F00BAF442 /* String+ExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D74CE2A7A922F00BAF442 /* String+ExtensionSpec.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		390C1FCA272A263C0041ACCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = "andpad-camera_Example";
+		};
+		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = "andpad-camera";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BEA137E64652EB42A14C96 /* Pods-andpad-camera_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-andpad-camera_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-andpad-camera_Tests/Pods-andpad-camera_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0697DF8CF8C5FA3012A4CC8A /* Pods_andpad_camera_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_andpad_camera_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EB8268B6DF10F7AAEC57F25 /* Pods-andpad-camera_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-andpad-camera_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-andpad-camera_Example/Pods-andpad-camera_Example.release.xcconfig"; sourceTree = "<group>"; };
+		390B140525492C00008CE94E /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		390C1FC4272A263C0041ACCA /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		392224F327CCDC0A00BB5F9B /* BlackboardFilterMultiSelectViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackboardFilterMultiSelectViewControllerTests.swift; sourceTree = "<group>"; };
+		3952F01D272A32FD008178AE /* ViewAccessibilityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAccessibilityIdentifier.swift; sourceTree = "<group>"; };
+		39710E4927963AB000DB6312 /* DummyBlackboardHistoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyBlackboardHistoryHandler.swift; sourceTree = "<group>"; };
+		3972F1C72848CA83004D46B2 /* PostOrPutBlackboardLoggingHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostOrPutBlackboardLoggingHandlerTests.swift; sourceTree = "<group>"; };
+		39992AE5279A70230001D07E /* BlackboardFilterConditionsHistoryViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardFilterConditionsHistoryViewControllerTests.swift; sourceTree = "<group>"; };
+		39992AE7279A70240001D07E /* ModernBlackboardContentViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernBlackboardContentViewTests.swift; sourceTree = "<group>"; };
+		39992AE9279A70240001D07E /* TakeCameraViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeCameraViewControllerTests.swift; sourceTree = "<group>"; };
+		39992AEA279A70240001D07E /* BlackboardFilterConditionsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardFilterConditionsViewModelTests.swift; sourceTree = "<group>"; };
+		39992AEC279A70240001D07E /* ResponseDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDataTests.swift; sourceTree = "<group>"; };
+		39992AED279A70240001D07E /* ModernBlackboardMaterialTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernBlackboardMaterialTests.swift; sourceTree = "<group>"; };
+		39992AEE279A70250001D07E /* InitialLocationDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialLocationDataTests.swift; sourceTree = "<group>"; };
+		39992AF0279A70260001D07E /* TakeCameraViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeCameraViewControllerSpec.swift; sourceTree = "<group>"; };
+		39992AF1279A70260001D07E /* UIView+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ExtensionTests.swift"; sourceTree = "<group>"; };
+		39992AF3279A70270001D07E /* UIView+FindTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FindTests.swift"; sourceTree = "<group>"; };
+		39992AF4279A70270001D07E /* UIView+Find.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Find.swift"; sourceTree = "<group>"; };
+		39992AF5279A70270001D07E /* BlackboardFilterMultiSelectViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardFilterMultiSelectViewModelTests.swift; sourceTree = "<group>"; };
+		39992AF6279A70270001D07E /* BlackboardListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardListViewControllerTests.swift; sourceTree = "<group>"; };
+		39E90984272B8A8000779993 /* XCUIElementQuery+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElementQuery+Identifier.swift"; sourceTree = "<group>"; };
+		39E90988272B9AF000779993 /* TakeCameraWithLegacyBlackboardUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeCameraWithLegacyBlackboardUITest.swift; sourceTree = "<group>"; };
+		39E9098B2733544E00779993 /* ActionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionHelper.swift; sourceTree = "<group>"; };
+		39EF8C7E287FD3DB00BCF0B3 /* ModernBlackboardAppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernBlackboardAppearanceTests.swift; sourceTree = "<group>"; };
+		39F8728729148F3B00291DFF /* ModernBlackboardMaterialStubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernBlackboardMaterialStubTests.swift; sourceTree = "<group>"; };
+		43A9E274F0F36EE286737E13 /* andpad-camera.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "andpad-camera.podspec"; path = "../andpad-camera.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4607DB092B198E6C003B4627 /* ModernBlackboardConfigurationInitialLocationDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernBlackboardConfigurationInitialLocationDataTests.swift; sourceTree = "<group>"; };
+		4618F3EC2C843AFF00799973 /* RemoteConfigHandlerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigHandlerStub.swift; sourceTree = "<group>"; };
+		469509AD2C7EE42200883282 /* RemoteConfigHandlerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigHandlerStub.swift; sourceTree = "<group>"; };
+		46B8B3A52AA59B300005BC3A /* ModernBlackboardLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernBlackboardLayoutTests.swift; sourceTree = "<group>"; };
+		46C635322C0853AF002DEE5B /* ModernBlackboardMaterial+forTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModernBlackboardMaterial+forTesting.swift"; sourceTree = "<group>"; };
+		46CD75F82BECE94300A3F3EC /* ModernBlackboardCameraStorageStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernBlackboardCameraStorageStub.swift; sourceTree = "<group>"; };
+		46E7B4B72ACB05B900CE1555 /* AndpadCameraLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AndpadCameraLoggerTests.swift; path = Common/AndpadCameraLoggerTests.swift; sourceTree = "<group>"; };
+		46ED3A412C27E096000E07F6 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		46ED3A432C2834B0000E07F6 /* PhotoPreviewWithLegacyBlackboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewWithLegacyBlackboardUITests.swift; sourceTree = "<group>"; };
+		46ED3A452C286C9F000E07F6 /* EditLegacyBlackboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLegacyBlackboardUITests.swift; sourceTree = "<group>"; };
+		46ED3A472C2901E6000E07F6 /* LegacyBlackboardTemplateListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyBlackboardTemplateListUITests.swift; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* andpad-camera_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "andpad-camera_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		607FACE51AFB9204008FA782 /* andpad-camera_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "andpad-camera_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FA1E6EAEFFFBF9DD973F5B /* Pods-andpad-camera_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-andpad-camera_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-andpad-camera_Example/Pods-andpad-camera_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		737AAEA4D3863380E41990A9 /* Pods_andpad_camera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_andpad_camera_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA89B593966C0CC9B056586 /* Pods-andpad-camera_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-andpad-camera_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-andpad-camera_Tests/Pods-andpad-camera_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		81A06CF5A03E4495E2D1E3FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A7E811322BEB8A0C00ED1AED /* ModernBlackboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernBlackboardTests.swift; sourceTree = "<group>"; };
+		BC328F812C2BA72C0015AFCF /* JavaScriptBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaScriptBridgeTests.swift; sourceTree = "<group>"; };
+		BC328F842C2BBF880015AFCF /* JavaScriptBridgeTests_JSON.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = JavaScriptBridgeTests_JSON.txt; sourceTree = "<group>"; };
+		BC328F862C2BBFEC0015AFCF /* JavaScriptBridgeTests_Expected.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = JavaScriptBridgeTests_Expected.txt; sourceTree = "<group>"; };
+		BCC6E5B82C0EF03300B63907 /* BlackboardHTMLRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackboardHTMLRendererTests.swift; sourceTree = "<group>"; };
+		C0CA1DD4F1BC2BF69E9C76D7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F9031E872A60440900A12353 /* ModernBlackboardCommonSettingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernBlackboardCommonSettingSpec.swift; sourceTree = "<group>"; };
+		F97D74CE2A7A922F00BAF442 /* String+ExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionSpec.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		390C1FC1272A263C0041ACCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343B2CE40F24C83FD63BF04B /* Pods_andpad_camera_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE21AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77843FE55F2B1F5EB70CFE49 /* Pods_andpad_camera_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09637A41F2B2A7553F88950E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62FA1E6EAEFFFBF9DD973F5B /* Pods-andpad-camera_Example.debug.xcconfig */,
+				2EB8268B6DF10F7AAEC57F25 /* Pods-andpad-camera_Example.release.xcconfig */,
+				01BEA137E64652EB42A14C96 /* Pods-andpad-camera_Tests.debug.xcconfig */,
+				7DA89B593966C0CC9B056586 /* Pods-andpad-camera_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		390C1FC5272A263C0041ACCA /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				39E9098A2733544200779993 /* Helpers */,
+				39E90983272B8A6500779993 /* Extension */,
+				3952F01C272A32F2008178AE /* Enum */,
+				39E90988272B9AF000779993 /* TakeCameraWithLegacyBlackboardUITest.swift */,
+				46ED3A432C2834B0000E07F6 /* PhotoPreviewWithLegacyBlackboardUITests.swift */,
+				46ED3A452C286C9F000E07F6 /* EditLegacyBlackboardUITests.swift */,
+				46ED3A472C2901E6000E07F6 /* LegacyBlackboardTemplateListUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		3952F01C272A32F2008178AE /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				3952F01D272A32FD008178AE /* ViewAccessibilityIdentifier.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		39992AE6279A70240001D07E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39992AE7279A70240001D07E /* ModernBlackboardContentViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39992AEB279A70240001D07E /* ResponseData */ = {
+			isa = PBXGroup;
+			children = (
+				39992AEC279A70240001D07E /* ResponseDataTests.swift */,
+				39992AED279A70240001D07E /* ModernBlackboardMaterialTests.swift */,
+				39EF8C7E287FD3DB00BCF0B3 /* ModernBlackboardAppearanceTests.swift */,
+				39F8728729148F3B00291DFF /* ModernBlackboardMaterialStubTests.swift */,
+				46B8B3A52AA59B300005BC3A /* ModernBlackboardLayoutTests.swift */,
+			);
+			path = ResponseData;
+			sourceTree = "<group>";
+		};
+		39992AF2279A70270001D07E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				39992AF3279A70270001D07E /* UIView+FindTests.swift */,
+				469509AD2C7EE42200883282 /* RemoteConfigHandlerStub.swift */,
+				39992AF4279A70270001D07E /* UIView+Find.swift */,
+				46C635322C0853AF002DEE5B /* ModernBlackboardMaterial+forTesting.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		39E90983272B8A6500779993 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				39E90984272B8A8000779993 /* XCUIElementQuery+Identifier.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		39E9098A2733544200779993 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				39E9098B2733544E00779993 /* ActionHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4607DB0B2B19968E003B4627 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				4607DB092B198E6C003B4627 /* ModernBlackboardConfigurationInitialLocationDataTests.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		46CD75F72BECE92500A3F3EC /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				46CD75F82BECE94300A3F3EC /* ModernBlackboardCameraStorageStub.swift */,
+				4618F3EC2C843AFF00799973 /* RemoteConfigHandlerStub.swift */,
+			);
+			name = Stub;
+			sourceTree = "<group>";
+		};
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD21AFB9204008FA782 /* Example for andpad-camera */,
+				607FACE81AFB9204008FA782 /* Tests */,
+				390C1FC5272A263C0041ACCA /* UITests */,
+				607FACD11AFB9204008FA782 /* Products */,
+				09637A41F2B2A7553F88950E /* Pods */,
+				DC672DC363266E3A2D0AAFAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD01AFB9204008FA782 /* andpad-camera_Example.app */,
+				607FACE51AFB9204008FA782 /* andpad-camera_Tests.xctest */,
+				390C1FC4272A263C0041ACCA /* UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACD21AFB9204008FA782 /* Example for andpad-camera */ = {
+			isa = PBXGroup;
+			children = (
+				46CD75F72BECE92500A3F3EC /* Stub */,
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				390B140525492C00008CE94E /* .swiftlint.yml */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
+				39710E4927963AB000DB6312 /* DummyBlackboardHistoryHandler.swift */,
+				46ED3A412C27E096000E07F6 /* Logger.swift */,
+			);
+			name = "Example for andpad-camera";
+			path = "andpad-camera";
+			sourceTree = "<group>";
+		};
+		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD41AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACE81AFB9204008FA782 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F97D74CC2A7A91E300BAF442 /* Common */,
+				39992AE5279A70230001D07E /* BlackboardFilterConditionsHistoryViewControllerTests.swift */,
+				39992AEA279A70240001D07E /* BlackboardFilterConditionsViewModelTests.swift */,
+				39992AF5279A70270001D07E /* BlackboardFilterMultiSelectViewModelTests.swift */,
+				39992AF6279A70270001D07E /* BlackboardListViewControllerTests.swift */,
+				46E7B4B72ACB05B900CE1555 /* AndpadCameraLoggerTests.swift */,
+				39992AF2279A70270001D07E /* Helper */,
+				39992AEE279A70250001D07E /* InitialLocationDataTests.swift */,
+				39992AEB279A70240001D07E /* ResponseData */,
+				39992AF0279A70260001D07E /* TakeCameraViewControllerSpec.swift */,
+				39992AE9279A70240001D07E /* TakeCameraViewControllerTests.swift */,
+				39992AF1279A70260001D07E /* UIView+ExtensionTests.swift */,
+				39992AE6279A70240001D07E /* View */,
+				392224F327CCDC0A00BB5F9B /* BlackboardFilterMultiSelectViewControllerTests.swift */,
+				3972F1C72848CA83004D46B2 /* PostOrPutBlackboardLoggingHandlerTests.swift */,
+				F9031E862A6043CF00A12353 /* Model */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				43A9E274F0F36EE286737E13 /* andpad-camera.podspec */,
+				C0CA1DD4F1BC2BF69E9C76D7 /* README.md */,
+				81A06CF5A03E4495E2D1E3FE /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		BC328F802C2BA7100015AFCF /* JSPackages */ = {
+			isa = PBXGroup;
+			children = (
+				BC328F832C2BBF560015AFCF /* JavaScriptBridgeTestPatterns */,
+				BC328F812C2BA72C0015AFCF /* JavaScriptBridgeTests.swift */,
+			);
+			path = JSPackages;
+			sourceTree = "<group>";
+		};
+		BC328F832C2BBF560015AFCF /* JavaScriptBridgeTestPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				BC328F842C2BBF880015AFCF /* JavaScriptBridgeTests_JSON.txt */,
+				BC328F862C2BBFEC0015AFCF /* JavaScriptBridgeTests_Expected.txt */,
+			);
+			path = JavaScriptBridgeTestPatterns;
+			sourceTree = "<group>";
+		};
+		DC672DC363266E3A2D0AAFAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				737AAEA4D3863380E41990A9 /* Pods_andpad_camera_Example.framework */,
+				0697DF8CF8C5FA3012A4CC8A /* Pods_andpad_camera_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9031E862A6043CF00A12353 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7E811322BEB8A0C00ED1AED /* ModernBlackboardTests.swift */,
+				F9031E872A60440900A12353 /* ModernBlackboardCommonSettingSpec.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F97D74CC2A7A91E300BAF442 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC328F802C2BA7100015AFCF /* JSPackages */,
+				4607DB0B2B19968E003B4627 /* Enum */,
+				F97D74CD2A7A920A00BAF442 /* Extension */,
+				BCC6E5B82C0EF03300B63907 /* BlackboardHTMLRendererTests.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F97D74CD2A7A920A00BAF442 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F97D74CE2A7A922F00BAF442 /* String+ExtensionSpec.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		390C1FC3272A263C0041ACCA /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 390C1FCE272A263C0041ACCA /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				390C1FC0272A263C0041ACCA /* Sources */,
+				390C1FC1272A263C0041ACCA /* Frameworks */,
+				390C1FC2272A263C0041ACCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				390C1FCB272A263C0041ACCA /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 390C1FC4272A263C0041ACCA /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		607FACCF1AFB9204008FA782 /* andpad-camera_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "andpad-camera_Example" */;
+			buildPhases = (
+				538806B288408E8EC7A9291F /* [CP] Check Pods Manifest.lock */,
+				3928FE7F25789DC7001FF046 /* [SwiftGen] Run Script */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
+				EA14006A9FE599286AACCC74 /* [CP] Embed Pods Frameworks */,
+				39260DB22546D183005D3BD1 /* [SwiftLint] Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "andpad-camera_Example";
+			productName = "andpad-camera";
+			productReference = 607FACD01AFB9204008FA782 /* andpad-camera_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		607FACE41AFB9204008FA782 /* andpad-camera_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "andpad-camera_Tests" */;
+			buildPhases = (
+				D819DBDC7F13934C2D902C6E /* [CP] Check Pods Manifest.lock */,
+				607FACE11AFB9204008FA782 /* Sources */,
+				607FACE21AFB9204008FA782 /* Frameworks */,
+				607FACE31AFB9204008FA782 /* Resources */,
+				7AAEAD17D9A5F43A82074292 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+			);
+			name = "andpad-camera_Tests";
+			productName = Tests;
+			productReference = 607FACE51AFB9204008FA782 /* andpad-camera_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1520;
+				ORGANIZATIONNAME = "ANDPAD Inc";
+				TargetAttributes = {
+					390C1FC3272A263C0041ACCA = {
+						CreatedOnToolsVersion = 13.0;
+						DevelopmentTeam = AA79H4PZC2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = NVQW989GCM;
+						LastSwiftMigration = 1200;
+						ProvisioningStyle = Manual;
+					};
+					607FACE41AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = NVQW989GCM;
+						LastSwiftMigration = 1300;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "andpad-camera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607FACCF1AFB9204008FA782 /* andpad-camera_Example */,
+				607FACE41AFB9204008FA782 /* andpad-camera_Tests */,
+				390C1FC3272A263C0041ACCA /* UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		390C1FC2272A263C0041ACCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACCE1AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390B140625492C00008CE94E /* .swiftlint.yml in Resources */,
+				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC328F872C2BBFEC0015AFCF /* JavaScriptBridgeTests_Expected.txt in Resources */,
+				BC328F852C2BBF880015AFCF /* JavaScriptBridgeTests_JSON.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39260DB22546D183005D3BD1 /* [SwiftLint] Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftLint] Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint --lenient\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		3928FE7F25789DC7001FF046 /* [SwiftGen] Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftGen] Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT\"/SwiftGen/bin/swiftgen config run --config \"$PODS_ROOT\"/../swiftgen.yml\n";
+		};
+		538806B288408E8EC7A9291F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-andpad-camera_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AAEAD17D9A5F43A82074292 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-andpad-camera_Tests/Pods-andpad-camera_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/CwlCatchException/CwlCatchException.framework",
+				"${BUILT_PRODUCTS_DIR}/CwlCatchExceptionSupport/CwlCatchExceptionSupport.framework",
+				"${BUILT_PRODUCTS_DIR}/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.framework",
+				"${BUILT_PRODUCTS_DIR}/CwlPosixPreconditionTesting/CwlPosixPreconditionTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/CwlPreconditionTesting/CwlPreconditionTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CwlCatchException.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CwlCatchExceptionSupport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CwlMachBadInstructionHandler.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CwlPosixPreconditionTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CwlPreconditionTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-andpad-camera_Tests/Pods-andpad-camera_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D819DBDC7F13934C2D902C6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-andpad-camera_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA14006A9FE599286AACCC74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-andpad-camera_Example/Pods-andpad-camera_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AndpadCore/AndpadCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AndpadUIComponent/AndpadUIComponent.framework",
+				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/DKCamera/DKCamera.framework",
+				"${BUILT_PRODUCTS_DIR}/DKImagePickerController/DKImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/DKPhotoGallery/DKPhotoGallery.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/Instantiate/Instantiate.framework",
+				"${BUILT_PRODUCTS_DIR}/InstantiateStandard/InstantiateStandard.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+				"${BUILT_PRODUCTS_DIR}/TamperProof/TamperProof.framework",
+				"${BUILT_PRODUCTS_DIR}/UIImage-ResizeMagick/UIImage_ResizeMagick.framework",
+				"${BUILT_PRODUCTS_DIR}/andpad-camera/andpad_camera.framework",
+				"${BUILT_PRODUCTS_DIR}/rakugaki/rakugaki.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AndpadCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AndpadUIComponent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKCamera.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKPhotoGallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instantiate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstantiateStandard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TamperProof.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImage_ResizeMagick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/andpad_camera.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/rakugaki.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-andpad-camera_Example/Pods-andpad-camera_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		390C1FC0272A263C0041ACCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E90985272B8A8000779993 /* XCUIElementQuery+Identifier.swift in Sources */,
+				46ED3A442C2834B0000E07F6 /* PhotoPreviewWithLegacyBlackboardUITests.swift in Sources */,
+				39E90989272B9AF000779993 /* TakeCameraWithLegacyBlackboardUITest.swift in Sources */,
+				46ED3A462C286C9F000E07F6 /* EditLegacyBlackboardUITests.swift in Sources */,
+				3952F01E272A32FD008178AE /* ViewAccessibilityIdentifier.swift in Sources */,
+				46ED3A482C2901E6000E07F6 /* LegacyBlackboardTemplateListUITests.swift in Sources */,
+				39E9098C2733544E00779993 /* ActionHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACCC1AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46ED3A422C27E096000E07F6 /* Logger.swift in Sources */,
+				46CD75F92BECE94300A3F3EC /* ModernBlackboardCameraStorageStub.swift in Sources */,
+				4618F3ED2C843AFF00799973 /* RemoteConfigHandlerStub.swift in Sources */,
+				39710E4A27963AB000DB6312 /* DummyBlackboardHistoryHandler.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE11AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4607DB0A2B198E6C003B4627 /* ModernBlackboardConfigurationInitialLocationDataTests.swift in Sources */,
+				39992AFE279A70270001D07E /* ModernBlackboardMaterialTests.swift in Sources */,
+				392224F427CCDC0A00BB5F9B /* BlackboardFilterMultiSelectViewControllerTests.swift in Sources */,
+				F9031E882A60440900A12353 /* ModernBlackboardCommonSettingSpec.swift in Sources */,
+				F97D74CF2A7A922F00BAF442 /* String+ExtensionSpec.swift in Sources */,
+				469509AE2C7EE42200883282 /* RemoteConfigHandlerStub.swift in Sources */,
+				46C635332C0853AF002DEE5B /* ModernBlackboardMaterial+forTesting.swift in Sources */,
+				39992B01279A70270001D07E /* TakeCameraViewControllerSpec.swift in Sources */,
+				39992B02279A70270001D07E /* UIView+ExtensionTests.swift in Sources */,
+				3972F1C82848CA83004D46B2 /* PostOrPutBlackboardLoggingHandlerTests.swift in Sources */,
+				39992B05279A70270001D07E /* BlackboardFilterMultiSelectViewModelTests.swift in Sources */,
+				BCC6E5B92C0EF03300B63907 /* BlackboardHTMLRendererTests.swift in Sources */,
+				A7E811332BEB8A0C00ED1AED /* ModernBlackboardTests.swift in Sources */,
+				39992AFD279A70270001D07E /* ResponseDataTests.swift in Sources */,
+				46E7B4B82ACB05B900CE1555 /* AndpadCameraLoggerTests.swift in Sources */,
+				39992AFB279A70270001D07E /* TakeCameraViewControllerTests.swift in Sources */,
+				39992AFC279A70270001D07E /* BlackboardFilterConditionsViewModelTests.swift in Sources */,
+				39992AF9279A70270001D07E /* ModernBlackboardContentViewTests.swift in Sources */,
+				39992AF8279A70270001D07E /* BlackboardFilterConditionsHistoryViewControllerTests.swift in Sources */,
+				39F8728829148F3B00291DFF /* ModernBlackboardMaterialStubTests.swift in Sources */,
+				39992B04279A70270001D07E /* UIView+Find.swift in Sources */,
+				39992AFF279A70270001D07E /* InitialLocationDataTests.swift in Sources */,
+				39EF8C7F287FD3DB00BCF0B3 /* ModernBlackboardAppearanceTests.swift in Sources */,
+				46B8B3A62AA59B300005BC3A /* ModernBlackboardLayoutTests.swift in Sources */,
+				BC328F822C2BA72C0015AFCF /* JavaScriptBridgeTests.swift in Sources */,
+				39992B03279A70270001D07E /* UIView+FindTests.swift in Sources */,
+				39992B06279A70270001D07E /* BlackboardListViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		390C1FCB272A263C0041ACCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* andpad-camera_Example */;
+			targetProxy = 390C1FCA272A263C0041ACCA /* PBXContainerItemProxy */;
+		};
+		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* andpad-camera_Example */;
+			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDF1AFB9204008FA782 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		390C1FCC272A263C0041ACCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AA79H4PZC2;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.kz56cd.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "andpad-camera_Example";
+			};
+			name = Debug;
+		};
+		390C1FCD272A263C0041ACCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AA79H4PZC2;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.kz56cd.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "andpad-camera_Example";
+			};
+			name = Release;
+		};
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		607FACF01AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FA1E6EAEFFFBF9DD973F5B /* Pods-andpad-camera_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = NVQW989GCM;
+				INFOPLIST_FILE = "andpad-camera/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.reformpad.ios.develop.camera-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development jp.reformpad.ios.develop.camera-example";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		607FACF11AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB8268B6DF10F7AAEC57F25 /* Pods-andpad-camera_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = NVQW989GCM;
+				INFOPLIST_FILE = "andpad-camera/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.reformpad.ios.develop.camera-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development jp.reformpad.ios.develop.camera-example";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		607FACF31AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BEA137E64652EB42A14C96 /* Pods-andpad-camera_Tests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = NVQW989GCM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/andpad-camera_Example.app/andpad-camera_Example";
+			};
+			name = Debug;
+		};
+		607FACF41AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA89B593966C0CC9B056586 /* Pods-andpad-camera_Tests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = NVQW989GCM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/andpad-camera_Example.app/andpad-camera_Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		390C1FCE272A263C0041ACCA /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				390C1FCC272A263C0041ACCA /* Debug */,
+				390C1FCD272A263C0041ACCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "andpad-camera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "andpad-camera_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "andpad-camera_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF31AFB9204008FA782 /* Debug */,
+				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}

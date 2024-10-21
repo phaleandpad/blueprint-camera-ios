@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "更新"; ObjectID = "Uil-LR-rVN"; */
+"Uil-LR-rVN.normalTitle" = "更新";
+
+/* Class = "UILabel"; text = "絞り込み条件を反映するには画面の更新が必要です"; ObjectID = "YNk-py-ylL"; */
+"YNk-py-ylL.text" = "絞り込み条件を反映するには画面の更新が必要です";
+
+/* Class = "UIButton"; normalTitle = "キャンセル"; ObjectID = "r53-q6-yTr"; */
+"r53-q6-yTr.normalTitle" = "キャンセル";
+
+/* Class = "UILabel"; text = "撮影時の絞り込み条件が変更されました"; ObjectID = "yvQ-kP-aVy"; */
+"yvQ-kP-aVy.text" = "撮影時の絞り込み条件が変更されました";

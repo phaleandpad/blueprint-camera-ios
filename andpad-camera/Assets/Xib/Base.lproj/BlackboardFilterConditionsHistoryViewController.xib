@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlackboardFilterConditionsHistoryViewController" customModule="andpad_camera" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyView" destination="NVq-v2-oSP" id="TFL-Ie-zfg"/>
+                <outlet property="tableView" destination="3ZH-FT-Mag" id="r8W-gs-MY2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3ZH-FT-Mag" customClass="BlackboardFilterConditionsHistoryTableView" customModule="andpad_camera" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVq-v2-oSP" customClass="BlackboardFilterConditionsHistoryEmptyView" customModule="andpad_camera" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="検索履歴はありません" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS6-i3-wdu">
+                            <rect key="frame" x="125" y="416" width="164" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IS6-i3-wdu" firstAttribute="centerX" secondItem="NVq-v2-oSP" secondAttribute="centerX" id="fy0-WA-P7u"/>
+                        <constraint firstItem="IS6-i3-wdu" firstAttribute="centerY" secondItem="NVq-v2-oSP" secondAttribute="centerY" id="igv-ao-GCz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3ZH-FT-Mag" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4L2-wc-vR6"/>
+                <constraint firstAttribute="bottom" secondItem="NVq-v2-oSP" secondAttribute="bottom" id="MFj-6h-tRk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3ZH-FT-Mag" secondAttribute="trailing" id="bPP-rH-R0L"/>
+                <constraint firstAttribute="bottom" secondItem="3ZH-FT-Mag" secondAttribute="bottom" id="doI-Z5-0hT"/>
+                <constraint firstItem="3ZH-FT-Mag" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gnx-Zl-cRC"/>
+                <constraint firstItem="NVq-v2-oSP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nFz-93-QPh"/>
+                <constraint firstItem="NVq-v2-oSP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qAr-3q-H4o"/>
+                <constraint firstItem="NVq-v2-oSP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uTS-Od-aRY"/>
+            </constraints>
+            <point key="canvasLocation" x="-370" y="135"/>
+        </view>
+    </objects>
+</document>

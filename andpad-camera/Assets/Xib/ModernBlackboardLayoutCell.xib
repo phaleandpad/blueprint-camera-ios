@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="rU1-NS-14g" customClass="ModernBlackboardLayoutCell" customModule="andpad_camera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rU1-NS-14g" id="kRJ-N7-akT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMO-rD-kvU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tDs-qn-qfR">
+                                <rect key="frame" x="64" y="16" width="192" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tDs-qn-qfR" secondAttribute="height" multiplier="30:23" id="NEA-8o-BoQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tDs-qn-qfR" secondAttribute="bottom" constant="16" id="4Jl-jY-nIx"/>
+                            <constraint firstItem="tDs-qn-qfR" firstAttribute="leading" secondItem="aMO-rD-kvU" secondAttribute="leading" constant="64" id="EVZ-wT-tVA"/>
+                            <constraint firstItem="tDs-qn-qfR" firstAttribute="top" secondItem="aMO-rD-kvU" secondAttribute="top" constant="16" id="PTT-Ux-xXp"/>
+                            <constraint firstAttribute="trailing" secondItem="tDs-qn-qfR" secondAttribute="trailing" constant="64" id="cat-Kv-Rp0"/>
+                            <constraint firstItem="tDs-qn-qfR" firstAttribute="centerX" secondItem="aMO-rD-kvU" secondAttribute="centerX" id="ghU-VM-KjY"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tDs-qn-qfR" secondAttribute="trailing" priority="750" constant="64" id="pGx-At-Uaf"/>
+                            <constraint firstItem="tDs-qn-qfR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aMO-rD-kvU" secondAttribute="leading" priority="750" constant="64" id="w6X-e9-Qsq"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="450" id="xaP-eI-nw8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aMO-rD-kvU" secondAttribute="trailing" id="8kq-OW-c5H"/>
+                    <constraint firstAttribute="bottom" secondItem="aMO-rD-kvU" secondAttribute="bottom" id="E2w-ak-gyD"/>
+                    <constraint firstItem="aMO-rD-kvU" firstAttribute="top" secondItem="kRJ-N7-akT" secondAttribute="top" id="UJp-L2-dif"/>
+                    <constraint firstItem="aMO-rD-kvU" firstAttribute="leading" secondItem="kRJ-N7-akT" secondAttribute="leading" id="ard-H1-CdR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="TDd-Td-1Ug"/>
+            <connections>
+                <outlet property="blackboardImageView" destination="tDs-qn-qfR" id="bs4-v5-s5o"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="19"/>
+        </tableViewCell>
+    </objects>
+</document>

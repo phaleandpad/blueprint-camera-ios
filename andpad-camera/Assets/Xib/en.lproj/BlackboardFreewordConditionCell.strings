@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "フリーワードを入力"; ObjectID = "J0F-5L-LhO"; */
+"J0F-5L-LhO.normalTitle" = "Enter free keyword";
+
+/* Class = "UILabel"; text = "フリーワード"; ObjectID = "Mbq-jw-oUo"; */
+"Mbq-jw-oUo.text" = "Free keyword";
+
+/* Class = "UITextField"; placeholder = "フリーワードを入力"; ObjectID = "N9G-F4-HsH"; */
+"N9G-F4-HsH.placeholder" = "Enter free keyword";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lUz-rC-bh6"; */
+"lUz-rC-bh6.text" = "Label";

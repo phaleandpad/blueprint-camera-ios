@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="182" height="140" viewBox="0 0 182 140" fill="none">
+<g id="blackboard_layout">
+<rect x="1" y="1" width="180" height="138" rx="4" fill="#444444" />
+<rect x="1" y="1" width="180" height="138" rx="4" stroke="white" />
+<g id="Frame 1793">
+<g id="Frame 1786">
+<text id="(&#229;&#183;&#165;&#228;&#186;&#139;&#229;&#144;&#141;)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Noto Sans JP" font-size="9" font-weight="bold" letter-spacing="0px" x="5" y="13.674"><tspan x="5" y="13.674">(&#24037;&#20107;&#21517;)</tspan></text>
+</g>
+<line id="Line 105" x1="57.5" y1="1" x2="57.5" y2="19" stroke="white" />
+<g id="Frame 1787">
+<text id="&#239;&#188;&#136;&#230;&#161;&#136;&#228;&#187;&#182;&#229;&#144;&#141;&#239;&#188;&#137;" fill="white" xml:space="preserve" style="white-space: pre" font-family="Noto Sans JP" font-size="9" font-weight="bold" letter-spacing="0px" x="61" y="13.674"><tspan x="61" y="13.674">&#65288;&#26696;&#20214;&#21517;&#65289;</tspan></text>
+</g>
+<line id="Line 106" x1="1" y1="18.5" x2="181" y2="18.5" stroke="white" />
+</g>
+<g id="Frame 1789">
+<g id="Frame 1786_2">
+<text id="&#233;&#160;&#133;&#231;&#155;&#174;&#229;&#144;&#141;1" fill="#8F8F8F" xml:space="preserve" style="white-space: pre" font-family="Noto Sans JP" font-size="9" font-weight="bold" letter-spacing="0px" x="5" y="31.424"><tspan x="5" y="31.424">&#38917;&#30446;&#21517;1</tspan></text>
+</g>
+<line id="Line 105_2" x1="57.5" y1="19" x2="57.5" y2="37" stroke="white" />
+<g id="Frame 1787_2">
+<text id="&#233;&#160;&#133;&#231;&#155;&#174;&#229;&#134;&#133;&#229;&#174;&#185;1" fill="#8F8F8F" xml:space="preserve" style="white-space: pre" font-family="Noto Sans JP" font-size="9" font-weight="bold" letter-spacing="0px" x="61" y="31.424"><tspan x="61" y="31.424">&#38917;&#30446;&#20869;&#23481;1</tspan></text>
+</g>
+<line id="Line 106_2" x1="1" y1="36.5" x2="181" y2="36.5" stroke="white" />
+</g>
+<g id="Frame 1790">
+<g id="Frame 1786_3">
+<text id="&#233;&#160;&#133;&#231;&#155;&#174;&#229;&#144;&#141;2" fill="#8F8F8F" xml:space="preserve" style="white-space: pre" font-family="Noto Sans JP" font-size="7.5" font-weight="bold" letter-spacing="0px" x="5" y="48.77"><tspan x="5" y="48.77">&#38917;&#30446;&#21517;2</tspan></text>
+</g>
+<line id="Line 105_3" x1="37.5" y1="37" x2="37.5" y2="55" stroke="white" />
+<line id="Line 107" x1="91.5" y1="37" x2="91.5" y2="55" stroke="white" />
+<g id="Frame 1787_3">
+<text id="&#233;&#160;&#133;&#231;&#155;&#174;&#229;&#134;&#133;&#229;&#174;&#185;2" fill="#8F8F8F" xml:space="preserve" style="white-space: pre" font-family="Noto Sans JP" font-size="9" font-weight="bold" letter-spacing="0px" x="41" y="49.424"><tspan x="41" y="49.424">&#38917;&#30446;&#20869;&#23481;2</tspan></text>
+</g>
+<line id="Line 106_3" x1="1" y1="54.5" x2="91" y2="54.5" stroke="white" />
+</g>
+<g id="Frame 1796">
+<g id="Frame 1786_4">
+<text id="&#233;&#160;&#133;&#231;&#155;&#174;&#229;&#144;&#141;3" fill="#8F8F8F" xml:space="preserve" style="white-space: pre" font-family="Noto Sans JP" font-size="7.5" font-weight="bold" letter-spacing="0px" x="95" y="48.77"><tspan x="95" y="48.77">&#38917;&#30446;&#21517;3</tspan></text>
+</g>
+<line id="Line 105_4" x1="127.5" y1="37" x2="127.5" y2="55" stroke="white" />
+<g id="Frame 1787_4">
+<text id="&#233;&#160;&#133;&#231;&#155;&#174;&#229;&#134;&#133;&#229;&#174;&#185;3" fill="#8F8F8F" xml:space="preserve" style="white-space: pre" font-family="Noto Sans JP" font-size="9" font-weight="bold" letter-spacing="0px" x="131" y="49.424"><tspan x="131" y="49.424">&#38917;&#30446;&#20869;&#23481;3</tspan></text>
+</g>
+<line id="Line 106_4" x1="91" y1="54.5" x2="181" y2="54.5" stroke="white" />
+</g>
+<g id="Frame 1795">
+<g id="Frame 1890">
+<g id="&#232;&#177;&#134;&#229;&#155;&#179;180/off">
+<rect width="86" height="80" transform="translate(93 57)" fill="#999999" fill-opacity="0.3" />
+<g id="fill-icon/fill-icon_image">
+<path id="currentColor" d="M152 81H120C118.939 81.0011 117.923 81.4228 117.173 82.1727C116.423 82.9227 116.001 83.9395 116 85V109C116.001 110.061 116.423 111.077 117.173 111.827C117.923 112.577 118.939 112.999 120 113H152C153.061 112.999 154.077 112.577 154.827 111.827C155.577 111.077 155.999 110.061 156 109V85C155.999 83.9395 155.577 82.9227 154.827 82.1727C154.077 81.4228 153.061 81.0011 152 81ZM125 87C125.593 87 126.173 87.1759 126.667 87.5056C127.16 87.8352 127.545 88.3038 127.772 88.852C127.999 89.4001 128.058 90.0033 127.942 90.5853C127.827 91.1672 127.541 91.7018 127.121 92.1213C126.702 92.5409 126.167 92.8266 125.585 92.9424C125.003 93.0581 124.4 92.9987 123.852 92.7716C123.304 92.5446 122.835 92.1601 122.506 91.6667C122.176 91.1734 122 90.5933 122 90C122 89.606 122.078 89.2159 122.228 88.8519C122.379 88.4879 122.6 88.1572 122.879 87.8786C123.157 87.6 123.488 87.3791 123.852 87.2283C124.216 87.0776 124.606 87 125 87ZM136 107H122L130 97L133 101L139 93L150 107H136Z" fill="#999999" fill-opacity="0.5" />
+</g>
+</g>
+</g>
+<text id="&#229;&#130;&#153;&#232;&#128;&#131;" fill="#8F8F8F" xml:space="preserve" style="white-space: pre" font-family="Noto Sans JP" font-size="9" font-weight="bold" letter-spacing="0px" x="5" y="67.424"><tspan x="5" y="67.424">&#20633;&#32771;</tspan></text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,6 @@
+
+/* Class = "UILabel"; text = "文字サイズは備考欄に収まるよう自動調整されます"; ObjectID = "aXy-CV-3QJ"; */
+"aXy-CV-3QJ.text" = "The font size will be automatically adjusted to fit in the notes field";
+
+/* Class = "UILabel"; text = "備考欄の書式設定"; ObjectID = "vny-xL-81A"; */
+"vny-xL-81A.text" = "Format notes field";

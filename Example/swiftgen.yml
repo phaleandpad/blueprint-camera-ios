@@ -1,0 +1,14 @@
+# for Localizing
+strings:
+    inputs: ../andpad-camera/Assets/en.lproj
+    outputs:
+        templateName: structured-swift5
+        output: ../andpad-camera/Classes/Common/Resources/Generated/Localized.swift
+        params:
+          bundle: Bundle.andpadCamera
+xcassets:
+  inputs:
+    - ../andpad-camera/Assets/camera.xcassets
+  outputs:
+    - templateName: swift5
+      output: ../andpad-camera/Classes/Common/Resources/Generated/Assets.swift

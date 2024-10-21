@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_align_bottom_invert.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

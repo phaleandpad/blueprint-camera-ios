@@ -1,0 +1,240 @@
+//
+//  Localizable.strings
+//  Pods
+//
+//  Created by msano on 2020/12/02.
+//
+
+// MARK: - Common
+
+"common.comma" = "、";
+"common.ok" = "OK";
+"common.cancel" = "Cancel";
+"common.done" = "Done";
+"common.delete" = "Delete";
+"common.error" = "Error";
+"common.destroy" = "Discard";
+"common.change" = "Change";
+"common.error.failToConnectNetwork" = "Connection failure";
+"common.error.operationCouldNotBeCompleted" = "処理を完了できませんでした";
+"common.retry" = "Try again";
+"common.back" = "Back";
+"common.draw" = "Write-on";
+"common.save" = "Save";
+"common.cannotShowZeroData" = "データが0件のため、表示できません";
+"common.selectAsItIs" = "このまま選択";
+"common.close" = "Close";
+"common.title.changeBlackboard" = "黒板を変更";
+"common.title.editCase" = "項目を編集";
+"common.title.editBlackboard" = "黒板を編集";
+"common.title.selectLayout" = "レイアウトを選択";
+"common.error.unknown" = "不明なエラーが発生しました。";
+"common.alert.title.appUpdate" = "Update the application?";
+"common.alert.description.appUpdate" = "Please update your application in order to use these blackboard";
+"common.alert.updateButton.appUpdate" = "Update";
+
+// MARK: variables
+
+"common.variables.validate.textMaxLength" = "%@は%d文字以内にしてください";
+
+// MARK: - Blackboard
+
+"blackboard.defaultName.constractionName" = "Construction name";
+"blackboard.defaultName.constractionPlace" = "工事場所";
+"blackboard.defaultName.constractionPlayer" = "施工者";
+"blackboard.defaultName.constractionCategory" = "工種";
+"blackboard.defaultName.constructionState" = "施工状況";
+"blackboard.defaultName.constructionPhotoClass" = "写真区分";
+"blackboard.defaultName.photoTitle" = "写真タイトル";
+"blackboard.defaultName.detail" = "詳細";
+"blackboard.defaultName.inspectionReportTitle" = "検査報告書";
+"blackboard.defaultName.inspectionItem" = "検査項目";
+"blackboard.defaultName.inspectionTitle" = "検査名";
+"blackboard.defaultName.inspectionPoint" = "検査箇所";
+"blackboard.defaultName.inspector" = "検査担当会社";
+"blackboard.defaultName.client" = "施主名";
+"blackboard.defaultName.date" = "施工日";
+"blackboard.defaultName.memo" = "Notes";
+"blackboard.defaultName.alpha" = "透過度";
+"blackboard.alert.title.blackboardChangeOptions" = "Edit this blackboard?";
+"blackboard.alert.button.blackboardChangeOption.editBlackboard" = "Edit";
+"blackboard.alert.button.blackboardChangeOption.selectBlackboard" = "Select from blackboard list";
+"blackboard.alert.button.blackboardChangeOption.reloadBlackboard" = "Reload";
+"blackboard.alert.title.cannotSaveBlackboard" = "Unable to save changes";
+"blackboard.alert.description.cannotSaveBlackboard" = "Please check your input again.";
+"blackboard.alert.title.destroyEditedBlackboard" = "Discard the changes?";
+"blackboard.alert.description.destroyEditedBlackboard" = "You will lose all the changes if you close this page";
+"blackboard.alert.title.hasEditedBlackboardItem" = "編集した内容があります";
+"blackboard.alert.desc.hasEditedBlackboardItem" = "編集した内容を破棄して、作成済みの黒板を選択しますか？";
+"blackboard.alert.title.doChangeLayout" = "Change layout?";
+"blackboard.alert.desc.doChangeLayout" = "If you change the layout, the current contents (you entered) will be reset.";
+"blackboard.alert.button.destorySelectingBlackboard" = "黒板選択を取りやめる";
+"blackboard.alert.title.overwriteOrCopyNewBlackboard" = "This blackboard can be overwritten and saved.";
+"blackboard.alert.message.overwriteOrCopyNewBlackboard" = "If you overwrite and save, the original blackboard content will be lost.";
+"blackboard.alert.overwriteButton.overwriteOrCopyNewBlackboard" = "Overwrite and save";
+"blackboard.alert.copyNewButton.overwriteOrCopyNewBlackboard" = "Save as a new blackboard";
+"blackboard.alert.message.updateBlackboardByAdminAction" = "管理者が設定を変更しました";
+"blackboard.alert.okButton.updateBlackboardByAdminAction" = "反映する";
+"blackboard.alert.title.cannotSaveDuplicatedBlackboard" = "There is an existing blackboard with the same content, your changes couldn't be saved";
+"blackboard.alert.confirmButton.cannotSaveDuplicatedBlackboard" = "Move to existing blackboard";
+"blackboard.alert.takeCameraButton.cannotSaveDuplicatedBlackboard" = "Capture with existing blackboard";
+"blackboard.alert.cancelButton.cannotSaveDuplicatedBlackboard" = "Back to edit";
+"blackboard.alert.title.editConstructionNameInBlackboardEdit" = "Disable the line break position setting and edit Construction name?";
+"blackboard.alert.message.editConstructionNameInBlackboardEdit" = "Cannot edit the text while keep the line break positions setting";
+"blackboard.alert.editButton.editConstructionNameInBlackboardEdit" = "Edit";
+"blackboard.alert.title.emptyBlackboard" = "No blackboards match the filter";
+"blackboard.alert.button.clearCondition" = "Clear filter";
+"blackboard.create.title" = "Create a New Blackboard";
+"blackboard.create.descriptionForInputs" = "Contents";
+"blackboard.edit.preview.selectBlackboardButton.title" = "Blackboard list";
+"blackboard.edit.fontSize" = "Font size";
+"blackboard.edit.textHorizontalAlign" = "Horizontal align";
+"blackboard.edit.textVerticalAlign" = "Vertical align";
+"blackboard.edit.alphaForBlackboard" = "Blackboard transparency";
+"blackboard.edit.alphaForBlackboardFootnote" = "SVG形式で撮影する場合、黒板は透過されません";
+"blackboard.edit.noAlpha" = "0%%";
+"blackboard.edit.harfAlpha" = "50%%";
+"blackboard.edit.Alpha" = "100%%";
+"blackboard.edit.title" = "Edit blackboard";
+"blackboard.edit.descriptionForInputs" = "Contents";
+"blackboard.edit.validate.shouldinputAllBlackboardItemName" = "Please fill in all fields";
+"blackboard.edit.validate.shouldinputWithin10charsInBlackboardItemName" = "Item name must be less than 10 characters";
+"blackboard.edit.validate.shouldinputWithin254charsInConstructionName" = "Construction name must be less than 254 characters";
+"blackboard.edit.validate.shouldinputWithin200charsInMemo" = "Notes must be less than 200 characters";
+"blackboard.edit.validate.shouldinputWithin30charsInConstructionPlayerName" = "Company name must be less than 30 characters";
+"blackboard.edit.validate.shouldinputWithin30charsInBlackboardItemValue" = "Content of item must be less than 30 characters";
+"blackboard.edit.validate.lessThanCharacters" = "Less than %d characters";
+"blackboard.list.title" = "Blackboards";
+"blackboard.list.photo.count" = "%d photo(s)";
+"blackboard.list.noMatchMessage" = "No matched blackboards were found.";
+"blackboard.list.noBlackboardMessage" = "No blackboard";
+"blackboard.list.filter" = "Filter";
+"blackboard.list.sort.total" = "Total %d item(s)";
+"blackboard.list.sort.totalZero" = "Total - item(s)";
+"blackboard.miniatureMap.alert.title.failedToLoadMiniatureMap" = "黒板内の豆図ファイルの読み込みに失敗しました";
+"blackboard.miniatureMap.alert.description.failedToLoadMiniatureMap" = "通信環境の良いところで再度お試しください";
+"blackboard.miniatureMap.alert.cancelButton.failedToLoadMiniatureMap" = "撮影を中断";
+"blackboard.filter.title" = "Blackboard filter";
+"blackboard.filter.unspecified" = "Not selected";
+"blackboard.filter.selectEmptyItem" = "No %@";
+"blackboard.filter.multiSelectText" = "%d件の絞り込み条件";
+"blackboard.filter.existPhoto" = "With/Without Photo";
+"blackboard.filter.clear.deleteText" = "条件を削除";
+"blackboard.filter.clear.searchClearText" = "条件をクリアする";
+"blackboard.filter.clear.clearText" = "Clear";
+"blackboard.filter.clear.clearTextConfirmMessage" = "Clear the filter items?";
+"blackboard.filter.freeword" = "Free keyword";
+"blackboard.filter.noMatchMessage" = "検索に一致する項目がありませんでした。";
+"blackboard.filter.memo" = "Notes";
+"blackboard.filter.item" = "Items";
+"blackboard.filter.reSearch" = "再検索";
+"blackboard.filter.select" = "Select";
+"blackboard.filter.editAlert.title" = "Discard change";
+"blackboard.filter.editAlert.message" = "Discard the changed contents?";
+"blackboard.filter.editAlert.destruction" = "Discard";
+"blackboard.filter.photo.all" = "All";
+"blackboard.filter.photo.onlyWithPhotos" = "With photo";
+"blackboard.filter.photo.onlyWithoutPhotos" = "Without photo";
+"blackboard.filter.title.searchForBlackboardItem" = "Search for items";
+"blackboard.filter.sectionTitle.blackboardItem" = "Items";
+"blackboard.filter.sectionTitle.freeword" = "Free keyword (Up to 5 words)";
+"blackboard.filter.showAllBlackboardItemsButtonText" = "Display all items";
+"blackboard.filter.hideContentNotice" = "The contents that were not included in filtered blackboards are hidden";
+"blackboard.filter.notApplicable" = "Not available";
+"blackboard.filtered.emptyCount" = "-件";
+"blackboard.filtered.count" = "%d件";
+"blackboard.history.title" = "Search history";
+"blackboard.layoutlist.title" = "Select a blackboard layout";
+"blackboard.layoutlist.headerDescription.selectBlackboardLayout" = "Please select a layout to create a new blackboard";
+"blackboard.autoInputInformation.constructionNameTitle" = "(Construction name)";
+"blackboard.autoInputInformation.constructionName" = "(Project name)";
+"blackboard.autoInputInformation.constructionPlayerName" = "(Configured Company Name)";
+"blackboard.autoInputInformation.date" = "(Captured date)";
+"blackboard.error.noConnection" = "Connection failure";
+"blackboard.error.commonText" = "エラーが発生しました";
+"blackboard.error.emptyItem" = "データが0件のため、表示できません";
+"blackboard.error.retry" = "Try again";
+"blackboard.error.failToHandleHistories" = "履歴データの操作に失敗しました";
+"blackboard.error.cannotGetHistories.alertTitle" = "検索履歴が取得できません";
+"blackboard.error.cannotGetHistories.alertDescription" = "しばらくしてからもう一度お試しください";
+"blackboard.error.cannotUseHistoryFunction.alertDescription" = "ただいま履歴機能は使用できません。";
+"blackboard.error.failToCreateBlackboard.alertTitle" = "Failed to create or edit blackboard";
+"blackboard.error.failToCreateBlackboard.alertDescription" = "Please try again at a good connection";
+
+// MARK: Memo
+"memo.input.placeholder" = "Notes";
+
+// MARK: variables
+
+"blackboard.variable.selectBlackboardItem" = "%@を選択";
+"blackboard.variable.emptyBlackboardItem" = "No %@";
+"blackboard.variable.input.blackboardItemName" = "Item %d";
+"blackboard.variable.input.blackboardItemValue" = "Content %d";
+
+// MARK: - Photo
+
+"photo.isDeletePhoto" = "Delete this photo?";
+"photo.lockAEAF" = "AE/AF lock";
+"photo.save" = "Save";
+
+// MARK: - Camera
+
+"camera.reachedPhotoLimit" = "Maximum number of photos reached";
+"camera.drawDisabled" = "撮影枚数が上限に達したため写真書き込みはできません";
+"camera.iconTitleOn" = "On";
+"camera.iconTitleOff" = "Off";
+"camera.iconTitleAuto" = "Auto";
+"camera.iconTitleSwitchFront" = "Front";
+"camera.iconTitleSwitchBack" = "Back";
+"camera.iconTitleLock" = "Lock";
+"camera.iconTitleUnlock" = "Rotate";
+"camera.iconTitleBlackboardSettings" = "Config";
+"camera.alert.title.destroyPhotos" = "Discard captured image?";
+"camera.alert.description.destroyPhotos" = "The captured photos will not be saved if you close the camera without saving the photos";
+"camera.alert.uploadButton.destroyPhotos" = "To upload";
+"camera.alert.cancelButton.destroyPhotos" = "Back to camera";
+"camera.button.next" = "Next";
+"camera.blackboardSettings.title" = "Blackboard settings";
+"camera.blackboardSettings.visibility.title" = "Display";
+"camera.blackboardSettings.visibility.on.title" = "On";
+"camera.blackboardSettings.visibility.off.title" = "Off";
+"camera.blackboardSettings.orientation.title" = "Direction";
+"camera.blackboardSettings.orientation.lock.title" = "Lock";
+"camera.blackboardSettings.orientation.unlock.title" = "Rotate";
+"camera.blackboardSettings.size.title" = "Size";
+"camera.blackboardSettings.size.small" = "S";
+"camera.blackboardSettings.size.medium" = "M";
+"camera.blackboardSettings.size.large" = "L";
+"camera.blackboardSettings.size.free" = "Free value";
+"camera.blackboardSettings.size.small.description" = "(75%%)";
+"camera.blackboardSettings.size.medium.description" = "(100%%)";
+"camera.blackboardSettings.size.large.description" = "(150%%)";
+"camera.blackboardSettings.photoQuality.title" = "Quality";
+"camera.blackboardSettings.photoQuality.defaultStandard.title" = "Standard";
+"camera.blackboardSettings.photoQuality.defaultHigh.title" = "High";
+"camera.blackboardSettings.photoQuality.cals1M.title" = "CALS Low";
+"camera.blackboardSettings.photoQuality.cals2M.title" = "CALS Med";
+"camera.blackboardSettings.photoQuality.cals3M.title" = "CALS Lrg";
+"camera.blackboardSettings.photoQuality.defaultStandard.description" = "(975×\n1300)";
+"camera.blackboardSettings.photoQuality.defaultHigh.description" = "(1725×\n2300)";
+"camera.blackboardSettings.photoQuality.cals1M.description" = "(1M)";
+"camera.blackboardSettings.photoQuality.cals2M.description" = "(2M)";
+"camera.blackboardSettings.photoQuality.cals3M.description" = "(3M)";
+"camera.blackboardSettings.photoType.title" = "Format";
+"camera.blackboardSettings.photoType.jpeg" = "JPG";
+"camera.blackboardSettings.photoType.svg" = "SVG";
+"camera.blackboardSettings.footer.size.callout.title" = "※The default value is \"%@\"";
+"camera.timer.seconds" = "%d秒";
+
+// MARK: variables
+
+"camera.variables.countTakePhotos" = "撮影枚数: %d枚";
+"camera.variables.countPhotoLimit" = "Please take up to %d photos only";
+
+// MARK: Offline
+"offline.bar.label" = "ANDPAD is currently set to offline";
+"offline.unuploadedPhotos" = "Unuploaded photos（%d）";
+
+// MARK: App update view
+"appUpdateView.title" = "Please update the application as some blackboards are not available";
+"appUpdateView.update" = "Update";

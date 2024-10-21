@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModernEditBlackboardViewController" customModule="andpad_camera" customModuleProvider="target">
+            <connections>
+                <outlet property="offlineModeBar" destination="5ce-La-B43" id="gz1-i9-Rzo"/>
+                <outlet property="previewContainerTopMarginConstraint" destination="ORf-z9-3MW" id="Wzp-sP-oVH"/>
+                <outlet property="previewContainerView" destination="Di3-OR-dWq" id="0JR-nc-yJE"/>
+                <outlet property="tableView" destination="5cN-Vj-RGP" id="L4c-8G-szN"/>
+                <outlet property="view" destination="5AF-cM-NOd" id="ihf-M2-FiU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5AF-cM-NOd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NKu-Lf-jvy">
+                    <rect key="frame" x="0.0" y="48" width="414" height="0.0"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ce-La-B43" customClass="OfflineModeBar" customModule="andpad_camera" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="0.0"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="249" translatesAutoresizingMaskIntoConstraints="NO" id="Di3-OR-dWq" userLabel="Preview Container View">
+                    <rect key="frame" x="0.0" y="48" width="414" height="249"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5cN-Vj-RGP" customClass="TouchableTableView" customModule="andpad_camera" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="297" width="414" height="565"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="GCP-dn-F0d"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NKu-Lf-jvy" firstAttribute="leading" secondItem="5AF-cM-NOd" secondAttribute="leading" id="1sG-kH-UOU"/>
+                <constraint firstAttribute="trailing" secondItem="NKu-Lf-jvy" secondAttribute="trailing" id="4D8-dz-THa"/>
+                <constraint firstItem="Di3-OR-dWq" firstAttribute="leading" secondItem="GCP-dn-F0d" secondAttribute="leading" id="6DY-aq-pFL"/>
+                <constraint firstItem="Di3-OR-dWq" firstAttribute="top" secondItem="NKu-Lf-jvy" secondAttribute="bottom" id="ORf-z9-3MW"/>
+                <constraint firstItem="GCP-dn-F0d" firstAttribute="trailing" secondItem="Di3-OR-dWq" secondAttribute="trailing" id="SAi-5w-w8a"/>
+                <constraint firstItem="NKu-Lf-jvy" firstAttribute="top" secondItem="GCP-dn-F0d" secondAttribute="top" id="T9g-lZ-EIf"/>
+                <constraint firstItem="GCP-dn-F0d" firstAttribute="trailing" secondItem="5cN-Vj-RGP" secondAttribute="trailing" id="UYk-3Z-5Wa"/>
+                <constraint firstItem="5cN-Vj-RGP" firstAttribute="leading" secondItem="GCP-dn-F0d" secondAttribute="leading" id="ZNl-Kq-Qft"/>
+                <constraint firstItem="5cN-Vj-RGP" firstAttribute="top" secondItem="Di3-OR-dWq" secondAttribute="bottom" id="sN0-ff-f2Q"/>
+                <constraint firstItem="GCP-dn-F0d" firstAttribute="bottom" secondItem="5cN-Vj-RGP" secondAttribute="bottom" id="xwz-Ac-1rf"/>
+            </constraints>
+            <point key="canvasLocation" x="-16" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

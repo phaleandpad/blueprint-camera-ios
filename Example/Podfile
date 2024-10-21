@@ -1,0 +1,55 @@
+platform :ios, '14.0'
+use_frameworks!
+inhibit_all_warnings!
+
+#def shared_pods
+#  pod 'Alamofire'
+#  pod 'SwiftLint'
+#end
+
+target 'andpad-camera_Example' do
+  pod 'andpad-camera', :path => '../', :inhibit_warnings => false
+
+  # Private repos dependent on AndpadCamera
+  # TODO: master マージされ次第 tag 更新しもどす
+  # pod 'TamperProof', :git => 'git@github.com:88labs/tamper-proof-ios.git', :tag => '2.0.0'
+  # SVG 改善検知対応済み commit
+  pod ‘TamperProof’, :git => “git@github.com:88labs/tamper-proof-ios.git”, :commit => ‘9e51ff8503a6107e2d0a10252c765ac2c1b34e91’
+  pod 'rakugaki', :git => 'git@github.com:88labs/rakugaki.git', :tag => 'v0.14.0'
+
+  # andpad iOS SDK
+  $andpadIOSSDKVersion = '1.9.0'
+  pod 'AndpadCore', :git => 'git@github.com:88labs/andpad-ios-sdk.git', :tag => $andpadIOSSDKVersion
+  pod 'AndpadUIComponent', :git => 'git@github.com:88labs/andpad-ios-sdk.git', :tag => $andpadIOSSDKVersion
+
+  # for development
+  pod 'SwiftLint', '0.54.0'
+  pod 'SwiftGen', '6.6.3'
+
+  target 'andpad-camera_Tests' do
+    inherit! :search_paths
+    
+    pod 'Quick', '7.4.1'
+    pod 'Nimble', '13.2.1'
+    pod 'RxTest', '~>6.6.0'
+    pod 'RxBlocking', '~>6.6.0'
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 14.0
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+      end
+    end
+    
+    # Workaround to build for real devices on Xcode 14
+    # https://github.com/CocoaPods/CocoaPods/issues/11402#issuecomment-1201464693
+    if target.respond_to?(:product_type) and target.product_type == "com.apple.product-type.bundle"
+      target.build_configurations.each do |config|
+        config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+      end
+    end
+  end
+end

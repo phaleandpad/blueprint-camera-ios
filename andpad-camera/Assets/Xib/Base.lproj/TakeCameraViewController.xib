@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakeCameraViewController" customModule="andpad_camera" customModuleProvider="target">
+            <connections>
+                <outlet property="blackBoardButton" destination="a5M-Jr-JsY" id="c60-J3-eBN"/>
+                <outlet property="cancelButton" destination="jQH-Ay-ouB" id="lOA-zB-FYN"/>
+                <outlet property="countdownLabel" destination="Jf7-sC-86x" id="nE4-6i-1sw"/>
+                <outlet property="countdownView" destination="7Md-3O-Lub" id="hKQ-ky-OK2"/>
+                <outlet property="flashButton" destination="mEo-of-KXM" id="5R6-HL-vpa"/>
+                <outlet property="footerContainerView" destination="euv-8k-ygW" id="xXa-RL-mD7"/>
+                <outlet property="frontAndBackCameraSwitchButton" destination="PGE-hY-19F" id="HUC-NY-vKB"/>
+                <outlet property="headerContainerView" destination="ebw-jn-Ynt" id="qYS-gm-X90"/>
+                <outlet property="mappingButton" destination="fHx-dE-asU" id="o2h-Yc-3nC"/>
+                <outlet property="nextButton" destination="7hD-Ic-fAK" id="Gdw-Fg-lzK"/>
+                <outlet property="photoCountLabel" destination="Vxn-bB-qrf" id="D3b-fV-TYB"/>
+                <outlet property="shootingGuideButton" destination="izf-po-txD" id="0uQ-yf-KZm"/>
+                <outlet property="shutterButton" destination="6y7-vv-nms" id="HeO-Tk-gu7"/>
+                <outlet property="slider" destination="RWi-rP-O7E" id="z1V-4Y-zsz"/>
+                <outlet property="sliderContainerView" destination="IF6-IO-m8v" id="Ifo-sN-sjq"/>
+                <outlet property="thumbnailImageButton" destination="Qf1-uU-xl5" id="YtL-67-oQZ"/>
+                <outlet property="timerButton" destination="rrB-ax-tiV" id="dMz-l8-8KS"/>
+                <outlet property="videoPreviewView" destination="TI9-zq-FE2" id="ZL2-AO-pAC"/>
+                <outlet property="view" destination="DpA-uP-gxf" id="4CX-Fd-qCs"/>
+                <outlet property="zoomScaleLabel" destination="I3y-A0-r4d" id="Yzo-UX-3qe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DpA-uP-gxf">
+            <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebw-jn-Ynt" userLabel="&lt;Header View&gt;">
+                    <rect key="frame" x="0.0" y="20" width="810" height="48"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xm3-ar-iRL" userLabel="Stack View (left top icons)">
+                            <rect key="frame" x="16" y="-2" width="160" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHx-dE-asU">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="404-a6-pNz"/>
+                                        <constraint firstAttribute="width" constant="48" id="kRX-Bh-rg3"/>
+                                    </constraints>
+                                    <state key="normal" image="tool_icon_location_off"/>
+                                    <state key="selected" image="tool_icon_location_on"/>
+                                    <connections>
+                                        <action selector="didTapMappingButton" destination="-1" eventType="touchUpInside" id="QOq-uN-hSw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izf-po-txD" customClass="TakeCameraIconAndTitleButton" customModule="andpad_camera" customModuleProvider="target">
+                                    <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="1Q2-Df-Pdm"/>
+                                        <constraint firstAttribute="height" constant="48" id="PR2-0u-gNK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" image="tool_icon_guide_off"/>
+                                    <state key="selected" image="tool_icon_guide_on"/>
+                                    <connections>
+                                        <action selector="didTapShootingGuideButton" destination="-1" eventType="touchUpInside" id="wjE-jR-Mjh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrB-ax-tiV" userLabel="&lt;Timer&gt;" customClass="TakeCameraIconAndTitleButton" customModule="andpad_camera" customModuleProvider="target">
+                                    <rect key="frame" x="112" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="Rtf-YW-lH4"/>
+                                        <constraint firstAttribute="height" constant="48" id="Uxp-nl-FDA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" image="tool_icon_timer"/>
+                                    <connections>
+                                        <action selector="didTapTimerButton:" destination="-1" eventType="touchUpInside" id="YTu-q8-QEJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf1-uU-xl5">
+                            <rect key="frame" x="726" y="8" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="1zG-xs-5zS"/>
+                                <constraint firstAttribute="width" constant="32" id="Ngx-Dc-i5F"/>
+                            </constraints>
+                            <connections>
+                                <action selector="didTapThumbnailImageButton" destination="-1" eventType="touchUpInside" id="PN3-6x-v1Z"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;PhotoCountLabel&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxn-bB-qrf">
+                            <rect key="frame" x="770" y="14.5" width="24" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="6Vs-rn-ldq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Vxn-bB-qrf" firstAttribute="leading" secondItem="Qf1-uU-xl5" secondAttribute="trailing" constant="12" id="0ic-zR-tae"/>
+                        <constraint firstAttribute="height" constant="48" id="7ik-nf-pbv"/>
+                        <constraint firstItem="Xm3-ar-iRL" firstAttribute="leading" secondItem="ebw-jn-Ynt" secondAttribute="leading" constant="16" id="b5Y-y3-Tbx"/>
+                        <constraint firstAttribute="bottom" secondItem="Xm3-ar-iRL" secondAttribute="bottom" constant="2" id="f1H-0X-BQf"/>
+                        <constraint firstAttribute="bottom" secondItem="Vxn-bB-qrf" secondAttribute="bottom" constant="16.5" id="fOI-GK-KpP"/>
+                        <constraint firstAttribute="bottom" secondItem="Qf1-uU-xl5" secondAttribute="bottom" constant="8" id="uWN-kW-HIA"/>
+                        <constraint firstAttribute="trailing" secondItem="Vxn-bB-qrf" secondAttribute="trailing" constant="16" id="zMC-9H-cQM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TI9-zq-FE2" userLabel="videoPreviewView">
+                    <rect key="frame" x="0.0" y="68" width="810" height="860"/>
+                    <gestureRecognizers/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3y-A0-r4d">
+                    <rect key="frame" x="383" y="910" width="44" height="24"/>
+                    <color key="backgroundColor" name="tsukuri.ref.gray90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="3Jw-OL-IWY"/>
+                        <constraint firstAttribute="width" constant="44" id="pWM-wr-uNq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="tsukuri.ref.white"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IF6-IO-m8v" userLabel="&lt;SliderView&gt;">
+                    <rect key="frame" x="0.0" y="884" width="810" height="32"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_label_invert_white_plus" translatesAutoresizingMaskIntoConstraints="NO" id="20j-D3-Vdz">
+                            <rect key="frame" x="774" y="10" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="3sB-T1-Yti"/>
+                                <constraint firstAttribute="width" constant="12" id="hMT-mc-Jeg"/>
+                            </constraints>
+                        </imageView>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="RWi-rP-O7E" customClass="ZoomSlider" customModule="andpad_camera" customModuleProvider="target">
+                            <rect key="frame" x="46" y="1" width="718" height="31"/>
+                            <connections>
+                                <action selector="didChangeSliderValue:" destination="-1" eventType="valueChanged" id="VAO-8x-1r4"/>
+                            </connections>
+                        </slider>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_label_invert_white_minus" translatesAutoresizingMaskIntoConstraints="NO" id="fOx-ve-zEC">
+                            <rect key="frame" x="24" y="10" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="CwG-Ts-HWS"/>
+                                <constraint firstAttribute="height" constant="12" id="j2R-Cs-kkZ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="RWi-rP-O7E" firstAttribute="leading" secondItem="fOx-ve-zEC" secondAttribute="trailing" constant="12" id="9jd-jy-kAP"/>
+                        <constraint firstItem="20j-D3-Vdz" firstAttribute="centerY" secondItem="IF6-IO-m8v" secondAttribute="centerY" id="Mde-Pi-bf0"/>
+                        <constraint firstItem="RWi-rP-O7E" firstAttribute="centerY" secondItem="IF6-IO-m8v" secondAttribute="centerY" id="Web-iw-TDn"/>
+                        <constraint firstItem="fOx-ve-zEC" firstAttribute="leading" secondItem="IF6-IO-m8v" secondAttribute="leading" constant="24" id="Z7w-ck-26G"/>
+                        <constraint firstAttribute="trailing" secondItem="20j-D3-Vdz" secondAttribute="trailing" constant="24" id="ZZV-18-hkf"/>
+                        <constraint firstItem="20j-D3-Vdz" firstAttribute="leading" secondItem="RWi-rP-O7E" secondAttribute="trailing" constant="12" id="mmG-pP-eCp"/>
+                        <constraint firstItem="fOx-ve-zEC" firstAttribute="centerY" secondItem="IF6-IO-m8v" secondAttribute="centerY" id="o4z-JB-xzN"/>
+                        <constraint firstAttribute="height" constant="32" id="xPS-bG-V9e"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euv-8k-ygW" userLabel="&lt;Footer View&gt;">
+                    <rect key="frame" x="0.0" y="928" width="810" height="144"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xnN-uM-qTO" userLabel="Stack View (left bottom  icons)">
+                            <rect key="frame" x="16" y="0.0" width="104" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEo-of-KXM" customClass="TakeCameraIconAndTitleButton" customModule="andpad_camera" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="Wdj-wd-VVu"/>
+                                        <constraint firstAttribute="width" constant="48" id="moe-cc-rBU"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" image="tool_icon_flash_on"/>
+                                    <connections>
+                                        <action selector="didTapFlashButton" destination="-1" eventType="touchUpInside" id="7Xi-3B-gtX"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGE-hY-19F" customClass="TakeCameraIconAndTitleButton" customModule="andpad_camera" customModuleProvider="target">
+                                    <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="mM2-id-ncC"/>
+                                        <constraint firstAttribute="height" constant="48" id="rkO-aA-QTj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" image="tool_icon_switching"/>
+                                    <connections>
+                                        <action selector="didTapFrontAndBackCameraSwitchButton" destination="-1" eventType="touchUpInside" id="x1C-oe-tfd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2MW-sO-7Lg" userLabel="Stack View (right bottom icons)">
+                            <rect key="frame" x="746" y="0.0" width="48" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-Jr-JsY" customClass="TakeCameraIconAndTitleButton" customModule="andpad_camera" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="bBE-pd-aGn"/>
+                                        <constraint firstAttribute="height" constant="48" id="pLc-hN-cI3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="tintColor" name="tsukuri.ref.white"/>
+                                    <state key="normal" image="tool_icon_blackboard_settings"/>
+                                    <state key="selected" image="tool_icon_blackboard_settings_notify_badge"/>
+                                    <connections>
+                                        <action selector="didTapBlackboardSettingsButton" destination="-1" eventType="touchUpInside" id="ORt-Pt-geb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQH-Ay-ouB">
+                            <rect key="frame" x="16" y="80" width="82" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="キャンセル">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapCancelButton" destination="-1" eventType="touchUpInside" id="hCe-By-Jga"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6y7-vv-nms">
+                            <rect key="frame" x="373" y="64" width="64" height="64"/>
+                            <accessibility key="accessibilityConfiguration" identifier="camera_capture"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="cVe-bs-VEO"/>
+                                <constraint firstAttribute="width" constant="64" id="liB-WP-9L8"/>
+                            </constraints>
+                            <state key="normal" image="Button_Shoot"/>
+                            <connections>
+                                <action selector="didTapShutterButton" destination="-1" eventType="touchUpInside" id="tfi-dJ-aYn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hD-Ic-fAK">
+                            <rect key="frame" x="712" y="72" width="82" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <accessibility key="accessibilityConfiguration" identifier="camera_captured_next"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="Xpb-dc-Yvi"/>
+                                <constraint firstAttribute="height" constant="48" id="ZgZ-dx-G04"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                            <state key="normal" title="次へ">
+                                <color key="titleColor" name="tsukuri.ref.andpad-dark-red"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapNextButton" destination="-1" eventType="touchUpInside" id="fC2-L6-2vW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="6y7-vv-nms" firstAttribute="centerY" secondItem="jQH-Ay-ouB" secondAttribute="centerY" id="3hS-MU-Wx3"/>
+                        <constraint firstAttribute="bottom" secondItem="6y7-vv-nms" secondAttribute="bottom" constant="16" id="66J-bR-piq"/>
+                        <constraint firstItem="7hD-Ic-fAK" firstAttribute="centerY" secondItem="6y7-vv-nms" secondAttribute="centerY" id="Mwy-pY-XOl"/>
+                        <constraint firstItem="2MW-sO-7Lg" firstAttribute="top" secondItem="euv-8k-ygW" secondAttribute="top" id="TTn-Ol-Twh"/>
+                        <constraint firstItem="6y7-vv-nms" firstAttribute="top" secondItem="euv-8k-ygW" secondAttribute="top" constant="64" id="iNr-Ln-Bkh"/>
+                        <constraint firstItem="xnN-uM-qTO" firstAttribute="leading" secondItem="euv-8k-ygW" secondAttribute="leading" constant="16" id="lVC-PH-jTc"/>
+                        <constraint firstItem="xnN-uM-qTO" firstAttribute="top" secondItem="euv-8k-ygW" secondAttribute="top" id="qMh-mu-VBk"/>
+                        <constraint firstAttribute="trailing" secondItem="7hD-Ic-fAK" secondAttribute="trailing" constant="16" id="qUv-xx-T6n"/>
+                        <constraint firstItem="jQH-Ay-ouB" firstAttribute="leading" secondItem="euv-8k-ygW" secondAttribute="leading" constant="16" id="rPf-OB-K3z"/>
+                        <constraint firstAttribute="trailing" secondItem="2MW-sO-7Lg" secondAttribute="trailing" constant="16" id="udy-9z-z8x"/>
+                        <constraint firstItem="6y7-vv-nms" firstAttribute="centerX" secondItem="euv-8k-ygW" secondAttribute="centerX" id="y53-0s-EIV"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Md-3O-Lub" userLabel="&lt;Countdown View&gt;">
+                    <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf7-sC-86x" userLabel="&lt;Countdown Label&gt;">
+                            <rect key="frame" x="270" y="349" width="270.5" height="298.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="250"/>
+                            <color key="textColor" name="tsukuri.ref.white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIw-P5-S1S" userLabel="&lt;Cancel countdown&gt;">
+                            <rect key="frame" x="373" y="992" width="64" height="64"/>
+                            <accessibility key="accessibilityConfiguration" identifier="camera_capture"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="KBh-9z-11y"/>
+                                <constraint firstAttribute="width" constant="64" id="uIX-eO-sgX"/>
+                            </constraints>
+                            <state key="normal" image="icon_cancel_button"/>
+                            <connections>
+                                <action selector="didTapCancelCountdownButton:" destination="-1" eventType="touchUpInside" id="B54-Cr-7Xc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fIw-P5-S1S" secondAttribute="bottom" constant="24" id="CaP-4f-8nT"/>
+                        <constraint firstItem="fIw-P5-S1S" firstAttribute="centerX" secondItem="7Md-3O-Lub" secondAttribute="centerX" id="fIQ-VY-lSQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8aB-G8-9LS"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="ebw-jn-Ynt" firstAttribute="trailing" secondItem="8aB-G8-9LS" secondAttribute="trailing" id="4en-xR-QeV"/>
+                <constraint firstItem="7Md-3O-Lub" firstAttribute="top" secondItem="DpA-uP-gxf" secondAttribute="top" id="5zC-Hp-76A"/>
+                <constraint firstAttribute="bottom" secondItem="7Md-3O-Lub" secondAttribute="bottom" id="6ur-YT-6Sk"/>
+                <constraint firstItem="TI9-zq-FE2" firstAttribute="leading" secondItem="8aB-G8-9LS" secondAttribute="leading" id="7tL-d2-Nhq"/>
+                <constraint firstItem="Jf7-sC-86x" firstAttribute="centerX" secondItem="TI9-zq-FE2" secondAttribute="centerX" id="BVl-sw-6eH"/>
+                <constraint firstItem="IF6-IO-m8v" firstAttribute="trailing" secondItem="8aB-G8-9LS" secondAttribute="trailing" id="DAF-VL-4Fi"/>
+                <constraint firstItem="7Md-3O-Lub" firstAttribute="leading" secondItem="8aB-G8-9LS" secondAttribute="leading" id="NXx-nD-VPr"/>
+                <constraint firstItem="I3y-A0-r4d" firstAttribute="centerX" secondItem="DpA-uP-gxf" secondAttribute="centerX" id="NsN-Kl-Vz9"/>
+                <constraint firstItem="ebw-jn-Ynt" firstAttribute="leading" secondItem="8aB-G8-9LS" secondAttribute="leading" id="OCH-qY-oKr"/>
+                <constraint firstItem="TI9-zq-FE2" firstAttribute="centerX" secondItem="DpA-uP-gxf" secondAttribute="centerX" id="OmJ-Sg-h2c"/>
+                <constraint firstItem="ebw-jn-Ynt" firstAttribute="top" secondItem="8aB-G8-9LS" secondAttribute="top" id="Ppc-Jl-iKo"/>
+                <constraint firstItem="TI9-zq-FE2" firstAttribute="top" secondItem="ebw-jn-Ynt" secondAttribute="bottom" id="QeY-nA-aTL"/>
+                <constraint firstAttribute="trailing" secondItem="euv-8k-ygW" secondAttribute="trailing" id="Vm9-kJ-KC8"/>
+                <constraint firstItem="8aB-G8-9LS" firstAttribute="trailing" secondItem="TI9-zq-FE2" secondAttribute="trailing" id="Xx3-Lw-hGX"/>
+                <constraint firstAttribute="bottom" secondItem="euv-8k-ygW" secondAttribute="bottom" constant="8" id="bWF-b5-O1F"/>
+                <constraint firstItem="Jf7-sC-86x" firstAttribute="centerY" secondItem="TI9-zq-FE2" secondAttribute="centerY" id="lr7-72-eZ3"/>
+                <constraint firstItem="euv-8k-ygW" firstAttribute="top" secondItem="TI9-zq-FE2" secondAttribute="bottom" id="maB-GL-VYD"/>
+                <constraint firstItem="8aB-G8-9LS" firstAttribute="trailing" secondItem="7Md-3O-Lub" secondAttribute="trailing" id="o0q-eY-mOh"/>
+                <constraint firstItem="euv-8k-ygW" firstAttribute="top" secondItem="IF6-IO-m8v" secondAttribute="bottom" constant="12" id="obN-Hy-sJP"/>
+                <constraint firstItem="I3y-A0-r4d" firstAttribute="top" secondItem="IF6-IO-m8v" secondAttribute="bottom" constant="-6" id="prk-9E-0Q9"/>
+                <constraint firstItem="euv-8k-ygW" firstAttribute="leading" secondItem="DpA-uP-gxf" secondAttribute="leading" id="v46-mi-bXi"/>
+                <constraint firstItem="IF6-IO-m8v" firstAttribute="leading" secondItem="8aB-G8-9LS" secondAttribute="leading" id="yu7-WC-cpv"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="eFe-Of-ZSB" appends="YES" id="8hx-ai-fDY"/>
+            </connections>
+            <point key="canvasLocation" x="106.66666666666666" y="-523.33333333333337"/>
+        </view>
+        <pinchGestureRecognizer id="eFe-Of-ZSB">
+            <connections>
+                <action selector="didPinchVideoPreviewView:" destination="-1" id="ZPM-1z-ZFT"/>
+            </connections>
+        </pinchGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Button_Shoot" width="64" height="64"/>
+        <image name="icon_cancel_button" width="64" height="64"/>
+        <image name="icon_label_invert_white_minus" width="12" height="2"/>
+        <image name="icon_label_invert_white_plus" width="12" height="12"/>
+        <image name="tool_icon_blackboard_settings" width="24" height="24"/>
+        <image name="tool_icon_blackboard_settings_notify_badge" width="24" height="24"/>
+        <image name="tool_icon_flash_on" width="24" height="24"/>
+        <image name="tool_icon_guide_off" width="24" height="24"/>
+        <image name="tool_icon_guide_on" width="24" height="24"/>
+        <image name="tool_icon_location_off" width="48" height="50"/>
+        <image name="tool_icon_location_on" width="48" height="50"/>
+        <image name="tool_icon_switching" width="24" height="24"/>
+        <image name="tool_icon_timer" width="24" height="24"/>
+        <namedColor name="tsukuri.ref.andpad-dark-red">
+            <color red="0.7839999794960022" green="0.063000001013278961" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tsukuri.ref.gray90">
+            <color red="0.2199999988079071" green="0.2199999988079071" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tsukuri.ref.white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

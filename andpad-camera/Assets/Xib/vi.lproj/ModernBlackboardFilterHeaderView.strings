@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; configuration.title = "写真無しのみ表示"; ObjectID = "9Ff-wS-br4"; */
+"9Ff-wS-br4.configuration.title" = "Bảng không kèm hình";
+
+/* Class = "UIButton"; normalTitle = "写真無しのみ表示"; ObjectID = "9Ff-wS-br4"; */
+"9Ff-wS-br4.normalTitle" = "Bảng không kèm hình";
+
+/* Class = "UIButton"; configuration.title = "絞り込み"; ObjectID = "v27-3U-S1m"; */
+"v27-3U-S1m.configuration.title" = "Bộ lọc";
+
+/* Class = "UIButton"; normalTitle = "絞り込み"; ObjectID = "v27-3U-S1m"; */
+"v27-3U-S1m.normalTitle" = "Bộ lọc";

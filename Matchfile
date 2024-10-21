@@ -1,0 +1,8 @@
+git_url("git@github.com:88labs/andpad-key.git")
+
+storage_mode("git")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+app_identifier(["jp.reformpad.ios.develop.camera-example"])
+

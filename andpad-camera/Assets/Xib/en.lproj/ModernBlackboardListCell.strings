@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "撮影"; ObjectID = "8zM-EF-DrG"; */
+"8zM-EF-DrG.text" = "Capture";
+
+/* Class = "UILabel"; text = "編集"; ObjectID = "MjM-Lp-7AU"; */
+"MjM-Lp-7AU.text" = "Edit";
+
+/* Class = "UILabel"; text = "9999枚"; ObjectID = "gdN-8F-Ov6"; */
+"gdN-8F-Ov6.text" = "9999枚";

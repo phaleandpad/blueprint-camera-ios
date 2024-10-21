@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "黒板レイアウト"; ObjectID = "1kB-ae-QrW"; */
+"1kB-ae-QrW.text" = "黒板レイアウト";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3Qg-9m-04S"; */
+"3Qg-9m-04S.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "BId-qn-YDm"; */
+"BId-qn-YDm.text" = "1";
+
+/* Class = "UILabel"; text = "黒板内容"; ObjectID = "M61-QK-tXU"; */
+"M61-QK-tXU.text" = "黒板内容";
+
+/* Class = "UILabel"; text = "豆図付き黒板はレイアウト変更できません"; ObjectID = "hN1-i8-gSm"; */
+"hN1-i8-gSm.text" = "豆図付き黒板はレイアウト変更できません";
+
+/* Class = "UILabel"; text = "工事名 / 撮影日 / 施工者名の修正は、撮影時のみ保持されます"; ObjectID = "nRx-iR-SdG"; */
+"nRx-iR-SdG.text" = "工事名 / 撮影日 / 施工者名の修正は、撮影時のみ保持されます";
